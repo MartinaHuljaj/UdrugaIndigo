@@ -1,1 +1,2 @@
-# korisniska-sucelja
+# UDRUGA INDIGO
+Kao projekt iz kolegija Korisnička sučelja, odlučili smo napraviti web stranicu za udrugu za zaštitu životinja Indigo. Korisnik će na stranici moći saznati neke osnovne informacije o udruzi te saznati sv novosti i događaje vezane za udrugu. Također, korisnik će imati mogućnost vidjeti sve životinje za koje udruga trenutno skrbi i koje su spremne za udomljavanje. Nakon stvaranja korisničkog računa korisnik može udomiti ljubimca, prijavite se kao volonter ili napraviti donaciju za udrugu. Na stranici se još nalaze kontakt informacije udruge, njihove društvene mreže te blog.
