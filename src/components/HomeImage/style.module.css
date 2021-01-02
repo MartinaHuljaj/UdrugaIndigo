@@ -1,0 +1,9 @@
+.image{
+    height:380px;
+    width:100%;
+    position:relative;
+    margin-top: 20px;
+    z-index: -1;
+    background-image: url('./naslovna1.jpg');
+    background-size: cover;
+}
