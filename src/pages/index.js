@@ -1,10 +1,11 @@
 import React from "react"
+import Header from '../components/Header'
 
-const IndexPage = () => (
+
+const IndexPage = ()=>(
   <main>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>This is were we will add content</p>
+    <Header />
+    
   </main>
 )
 

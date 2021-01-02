@@ -1,0 +1,8 @@
+
+/*treba sredit media query*/
+.logo {
+    display: flex;
+    flex-flow: column;
+    width: 40%;
+    height: fit-content; 
+  }
