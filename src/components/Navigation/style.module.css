@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Habibi&display=swap');
 .navigation {
     display: flex;
-    justify-content: space-evenly ;
+    justify-content: flex-end ;
     flex-flow: row;
     width: 70%;
     font-family: 'Habibi';
@@ -11,8 +11,8 @@
     padding: 14px 15px;
     list-style: none;
     width: fit-content;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 36px;
+    line-height: 100px;
     
     color: #555
   }
