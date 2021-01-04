@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Habibi&display=swap');
+.footer {
+    background-color: #E7E5E5;
+    padding: 40px;
+    display:inline-flex;
+    color: black;
+    font-size: 14px;
+    font-family: 'Habibi';
+
+    position: absolute;
+    bottom:5px;
+    left:5px;
+    right:5px;
+}
+
+.footer .address {
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    border-right: 1px #999 solid;
+    padding-right: 10px;
+}
+
+.title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Habibi';
+    font-size: 14px;
+    justify-content: center;
+    line-height: 30px;
+}
+.navigation li {
+    padding-left: 15px;
+    list-style: none;
+    width: fit-content;
+    font-size: 14px;
+    color: #555
+    
+  }
+  .navigation li:hover {
+    color:black;
+    cursor: pointer;
+  }
+  
+  .logo{
+    position: absolute;
+    right: 10px;
+    bottom:10px;  
+    height: 45px;
+  }
+
+  .logo2{
+    position: absolute;
+    right: 60px;
+    bottom:10px;  
+    height: 50px;
+  }
+
+
