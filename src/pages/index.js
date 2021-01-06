@@ -1,14 +1,15 @@
 import React from "react"
 import Header from '../components/Header'
-import HomeImage from '../components/HomeImage'
+import Home from '../components/Home'
 import Footer from '../components/Footer'
 
 
 const IndexPage = ()=>(
   <main>
     <Header />
-    <HomeImage/>
+    <Home/>
     <Footer/>
+
   </main>
 )
 

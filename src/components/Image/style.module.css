@@ -4,6 +4,6 @@
     position:relative;
     margin-top: 20px;
     z-index: -1;
-    background-image: url('./naslovna1.jpg');
+    /*background-image: url('./naslovna2.jpg');*/
     background-size: cover;
 }
