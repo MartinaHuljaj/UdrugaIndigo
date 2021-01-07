@@ -5,4 +5,5 @@
     flex-flow: column;
     width: 230px;
     height: fit-content; 
+    z-index: 1;
   }

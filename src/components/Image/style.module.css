@@ -1,8 +1,8 @@
 .image{
     height:380px;
     width:100%;
-    position:relative;
     margin-top: 20px;
+    object-position: center;
     z-index: -1;
     /*background-image: url('./naslovna2.jpg');*/
     background-size: cover;

@@ -3,7 +3,8 @@
     display: flex;
     justify-content: flex-end ;
     flex-flow: row;
-    width: 70%;
+    min-width: 0;
+    width: fit-content;
     font-family: 'Habibi';
   }
   
@@ -11,8 +12,8 @@
     padding: 14px 15px;
     list-style: none;
     width: fit-content;
-    font-size: 36px;
-    line-height: 100px;
+    font-size: 2vw;
+    line-height: 120px;
     
     color: #555
   }
