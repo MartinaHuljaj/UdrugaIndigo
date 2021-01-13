@@ -3,18 +3,20 @@
 }
 .clanak{
     position:absolute;
-    bottom:20px;
+    bottom:30px;
     right:20px;
     width:30%;
     height: 15vw;
     padding:20px;
     font-family: 'Habibi';
-    font-size:20px;
+    font-size:1.7vw;
     background-color: rgb(196,196,196,0.8) ;
+    
 
 }
 .clanak .pod{
-    font-size:12px;
+    font-size:1vw;
     color:rgb(61, 61, 61);
 
 }
+

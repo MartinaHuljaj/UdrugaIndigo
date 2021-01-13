@@ -5,6 +5,8 @@
     margin-top: 20px;
     object-position: center;
     z-index: -1;
+    padding-bottom:10px;
+    border-bottom: 1px solid black;
     
     
 }

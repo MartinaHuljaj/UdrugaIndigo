@@ -6,8 +6,8 @@ import Footer from '../components/Footer'
 
 const IndexPage = ()=>(
   <main>
-    <Header />
-    <Home/>
+    <Header/>
+    <Home />
     <Footer/>
 
   </main>

@@ -2,15 +2,12 @@
 .footer {
     background-color: #E7E5E5;
     padding: 40px;
-    display:inline-flex;
+    display:flex;
     color: black;
     font-size: 14px;
     font-family: 'Habibi';
+    position:relative;
 
-    position: absolute;
-    bottom:5px;
-    left:5px;
-    right:5px;
 }
 
 .footer .address {
