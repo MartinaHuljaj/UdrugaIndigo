@@ -5,15 +5,7 @@ import face from './facebook.png'
 import {Link} from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faFacebook, faInstagram} from "@fortawesome/free-brands-svg-icons"
-
-
-
-const navFooter=[
-    {tab:'Udomi', to:'/'},
-    {tab:'Volontiraj', to:'/'},
-    {tab:'Doniraj', to:'/'}
- 
-]
+import {nav2 as navFooter} from '../../constants/const.js'
 
 
 const Footer = ({activeTab,useThisStyle})=>(

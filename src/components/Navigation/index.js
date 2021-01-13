@@ -1,15 +1,9 @@
 import React from 'react'
 import {Link} from 'gatsby'
 import styles from './style.module.css'
+import {nav as navTabs} from '../../constants/const.js'
 
 
-const navTabs=[
-  {tab:'Psi', to:'/'},
-  {tab:'Mačke', to:'/'},
-  {tab:'Kontakt', to:'contact'},
-  {tab:'Novosti', to:'/'},
-  {tab:'Prijava/registracija', to:'/'}
-]
 
 const Navigation = ({activeTab, useThisStyle})=>(
     <nav className={styles[useThisStyle || 'navigation']}>
