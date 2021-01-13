@@ -2,9 +2,16 @@ import React from 'react'
 import styles from './style.module.css'
 import inst from './instagram.png'
 import face from './facebook.png'
+import {Link} from 'gatsby'
+
+const navFooter=[
+    {tab:'Udomi', to:'/'},
+    {tab:'Volontiraj', to:'/'},
+    {tab:'Doniraj', to:'/'}
+]
 
 
-const Footer = ()=>(
+const Footer = ({activeTab,useThisStyle})=>(
     <footer className={styles.footer}>
     <ul className={styles.address}>
         <li className={styles.title}>
@@ -14,12 +21,12 @@ const Footer = ()=>(
         <li>10000 Zagreb</li>
 
     </ul>
-    <nav className={styles.navigation}>
-        <li className={styles.active}></li>
-        <li>Udomi</li>
-        <li>Volontiraj</li>
-        <li>Doniraj</li>
-
+    <nav className={styles[useThisStyle || 'navigation']}>
+        {navFooter.map(({tab, to}) => (
+          <Link to={to} >
+              <li className={tab === activeTab ? styles.active : ''}>{tab}</li>
+          </Link>)
+        )}
     </nav>
     <nav >
         <img src={inst} alt="Instagram" className={styles.logo}/>
