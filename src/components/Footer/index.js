@@ -3,11 +3,16 @@ import styles from './style.module.css'
 import inst from './instagram.png'
 import face from './facebook.png'
 import {Link} from 'gatsby'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faFacebook, faInstagram} from "@fortawesome/free-brands-svg-icons"
+
+
 
 const navFooter=[
     {tab:'Udomi', to:'/'},
     {tab:'Volontiraj', to:'/'},
     {tab:'Doniraj', to:'/'}
+ 
 ]
 
 
@@ -29,8 +34,9 @@ const Footer = ({activeTab,useThisStyle})=>(
         )}
     </nav>
     <nav >
-        <img src={inst} alt="Instagram" className={styles.logo}/>
-        <img src={face} alt="Facebook" className={styles.logo2}/>
+        <a href="https://www.facebook.com/Indigo.udruga" className={styles.logo} target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faFacebook} size="3x" /></a>
+
+        <a href="https://www.instagram.com/udruga.indigo/" className={styles.logo2} target="_blank" rel="noopener noreferrer" > <FontAwesomeIcon icon={faInstagram} size="3x" /></a>
     </nav>
 
 </footer>
