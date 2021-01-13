@@ -7,6 +7,7 @@
     margin-bottom: 10px;
     border-bottom: 1px solid black;
     text-indent: 20px;
+    line-height: 3vw;
     
 }
 form input{
@@ -19,7 +20,11 @@ form input{
 .p{
     font-family: 'Habibi';
     font-size:2vw;
-    text-align: left;
+    width:80%;
+    margin-left:20px;
+    margin-bottom: 20px;
+    
+    
     
 }
 .label{

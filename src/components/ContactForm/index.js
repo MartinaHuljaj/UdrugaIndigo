@@ -6,8 +6,8 @@ import glavna from './5.png'
 const ContactForm=()=>(
     <main>
     <Image slika={glavna}/>
-    <section className={styles.form}>
-        <p className={styles.p}>Imaš pitanja za nas?<pre>Slobodno nam se javi! :D</pre></p>
+    <section >
+        <p className={styles.p}>Imaš pitanja za nas?<br/>Slobodno nam se javi! :D</p>
     </section>
     <form className={styles.form}>
         <div>

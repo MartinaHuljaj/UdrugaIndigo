@@ -5,9 +5,9 @@ import UdomiForm from '../components/Udomi'
 
 const Udomi=()=>(
     <main>
-        <Header activeTab="Udomi"/>
+        <Header />
         <UdomiForm/>
-        <Footer/>
+        <Footer activeTab="Udomi"/>
     </main>
 )
 
