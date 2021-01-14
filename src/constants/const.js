@@ -8,7 +8,7 @@ export const nav=[
 
   export const nav2=[
     {tab:'Udomi', to:'/udomi'},
-    {tab:'Volontiraj', to:'/'},
+    {tab:'Volontiraj', to:'/volontiraj'},
     {tab:'Doniraj', to:'/'}
  
 ]
