@@ -11,12 +11,33 @@
     font-family: 'Habibi';
     font-size:1.7vw;
     background-color: rgb(196,196,196,0.8) ;
-    
-
 }
 .clanak .pod{
     font-size:1vw;
     color:rgb(61, 61, 61);
 
+}
+.galerijaOkvir{
+    border-bottom: 1px solid black;
+    padding: auto;
+}
+div.galerija img{
+    width: 300px;
+    height: 300px;
+    padding-top: 10px;
+    padding-right: auto;
+    padding-left: auto;
+    padding-bottom: 5px;
+}
+div.galerija{
+    display: inline;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.text{
+    font-weight: bold;
+    font-size: larger;
+    padding-left: 2%;
+    text-align: left;
 }
 
