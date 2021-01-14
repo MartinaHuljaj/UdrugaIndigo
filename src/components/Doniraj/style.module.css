@@ -1,0 +1,26 @@
+.section{
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    font-family: 'Habibi';
+    font-size: 2vw;
+    line-height: 3vw;
+    
+}
+.p1{
+    margin:20px;
+    margin-top: 6vh;
+    width: 60%;
+    
+}
+
+.p2{
+    margin:20px;
+    width: 60%;
+}
+
+.p3{
+    margin:20px;
+    margin-bottom: 10vh;
+    width: 60%;
+    
+}

@@ -1,11 +1,11 @@
 import React from 'react'
 import styles from './style.module.css'
 import Image from '../Image'
-import glavna from './5.png'
+import cover from './5.png'
 
 const ContactForm=()=>(
     <main>
-    <Image slika={glavna}/>
+    <Image slika={cover}/>
     <section >
         <p className={styles.p}>Imaš pitanja za nas?<br/>Slobodno nam se javi! :D</p>
     </section>
