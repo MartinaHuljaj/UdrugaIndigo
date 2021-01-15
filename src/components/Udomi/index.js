@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import {navigate} from 'gatsby'
 import styles from './style.module.css'
-import Image from '../Image'
-import cover from '../../images/4.png'
+
+
 
 const Udomi =()=>{
     const [user, setUser] = useState(localStorage.getItem('loggedIn'))
