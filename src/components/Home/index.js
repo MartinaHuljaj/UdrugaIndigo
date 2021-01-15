@@ -32,7 +32,11 @@ const Home =()=>(
       <p className={styles.autor}>Hana, Split</p>
     </section>
     <section>
+      <div className={styles.text}>Novosti:</div>
       
+      {/* Dodaj novosti! */}
+      
+
     </section>
     <section>
       <p></p>
