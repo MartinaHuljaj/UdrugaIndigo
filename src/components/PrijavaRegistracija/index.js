@@ -77,27 +77,37 @@ const PrijavaRegistracija=()=>{
                     <p className={styles.p}>Registracija</p>
 
                     <section>
-                        <label className={styles.label}>Ime</label>
-                        <input type="text" className={styles.input} required />
+                        <label className={styles.label}>
+                            Ime
+                            <input type="text" className={styles.input} required />
+                        </label>
                     </section>
 
                     <section>
-                        <label className={styles.label}>Prezime</label>
-                        <input type="text" className={styles.input} required />
+                        <label className={styles.label}>
+                            Prezime
+                            <input type="text" className={styles.input} required />
+                        </label>
                     </section>
 
                     <section>
-                        <label className={styles.label}>Mail</label>
-                        <input type="email" id="mail" className={styles.input} required/>
+                        <label className={styles.label}>
+                            Mail
+                            <input type="email" id="mail" className={styles.input} required/>
+                        </label>
                     </section>
                     <section>
-                        <label className={styles.label}>Lozinka</label>
-                        <input type="password" id="lozinka" className={styles.input} required />
+                        <label className={styles.label}>
+                            Lozinka
+                            <input type="password" id="lozinka" className={styles.input} required />
+                            </label>
                     </section>
 
                     <section>
-                        <label className={styles.label}>Ponovi lozinku</label>
-                        <input type="password" className={styles.input} required />
+                        <label className={styles.label}>
+                            Ponovi lozinku
+                            <input type="password" className={styles.input} required />
+                        </label>
                     </section>
 
                     <button className={styles.button} onClick={()=> register()}>Registriraj se</button>

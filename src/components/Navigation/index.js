@@ -9,13 +9,14 @@ const Navigation = ({activeTab, useThisStyle})=>(
     <nav className={styles[useThisStyle || 'navigation']}>
         {navTabs.map(({tab, to}) => (
           <Link to={to} >
-              <li className={tab === activeTab ? styles.active : ''}>{tab}</li>
+              <div className={tab === activeTab ? styles.active : ''}>{tab}</div>
           </Link>)
         )}
                 <Link to={'/prijava'}>
-            <li onClick={loggedIn() ? () => localStorage.removeItem('loggedIn') : () => {}}>
+            <div onClick={loggedIn() ? () => localStorage.removeItem('loggedIn') : () => {}} onKeyPress={loggedIn() ? () => localStorage.removeItem('loggedIn') : () => {}} 
+            role="button" aria-hidden>
                 {loggedIn() ? 'Odjava' : 'Prijava/registracija'}
-            </li>
+            </div>
         </Link>
     </nav>
 )
