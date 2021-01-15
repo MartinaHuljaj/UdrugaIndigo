@@ -23,6 +23,17 @@ const Home =()=>(
       <div className={styles.galerija}><img src={pic4}></img></div>
       <div className={styles.galerija}><img src={pic5}></img></div>
     </section>
+    <section className={styles.citat}>
+      <div>
+        "Kada sam prvi put otišla na šetnju po Marjanu sas ekipom iz Indiga, zaljubila sam se u malog <br/>
+        labradora s imenom Rio. Dvije godine kasnije, rio i ja smo još uvijek najbolji prijatelji i neizmjerno <br/>
+        smo zahvalni udruzi indigo što nas je spojila"
+      </div>
+      <p className={styles.autor}>Hana, Split</p>
+    </section>
+    <section>
+      
+    </section>
     <section>
       <p></p>
     </section>
