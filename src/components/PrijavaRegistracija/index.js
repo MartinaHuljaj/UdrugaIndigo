@@ -4,11 +4,20 @@ import Image from '../Image'
 import cover from '../../images/8.png'
 import {navigate} from 'gatsby'
 
-let users =JSON.parse(localStorage.getItem("users"))
+
 
 const PrijavaRegistracija=()=>{
 
-
+    let users = [
+        {
+          username: "mate",
+          password: "123"
+        },
+        {
+          username: "jure",
+          password: "123"
+        },
+    ]
 
     const [username, setUserName] = useState()
     const [password, setPassword] = useState()
@@ -16,11 +25,10 @@ const PrijavaRegistracija=()=>{
     const [loading, setLoading] = useState(false)
 
     const submit = () => {
-        
         setError(false)
         setLoading(true)
         setTimeout(() => {
-        let loginSuccessful = !!users.find(user => user.username === username && user.password === password)
+        const loginSuccessful = !!users.find(user => user.username === username && user.password === password)
         setLoading(false)
         if (loginSuccessful) {
             localStorage.setItem("loggedIn", username)
@@ -37,7 +45,7 @@ const PrijavaRegistracija=()=>{
             password: document.getElementById('lozinka').value
         }
         users.push(user);
-        localStorage.setItem("users",JSON.stringify(users))
+        console.log({users})
     }
 
 
