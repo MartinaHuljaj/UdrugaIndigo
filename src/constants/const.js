@@ -2,8 +2,8 @@ export const nav=[
     {tab:'Psi', to:'/psi'},
     {tab:'Mačke', to:'/'},
     {tab:'Kontakt', to:'/contact'},
-    {tab:'Novosti', to:'/'},
-    {tab:'Prijava/registracija', to:'/prijava'}
+    {tab:'Novosti', to:'/'}
+    
   ]
 
   export const nav2=[
