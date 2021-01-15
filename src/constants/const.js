@@ -1,5 +1,5 @@
 export const nav=[
-    {tab:'Psi', to:'/'},
+    {tab:'Psi', to:'/psi'},
     {tab:'Mačke', to:'/'},
     {tab:'Kontakt', to:'/contact'},
     {tab:'Novosti', to:'/'},

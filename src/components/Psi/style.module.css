@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+}
+.row{
+    display: flex;
+}
+.galerija{
+    flex: 60%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-right: 1px solid black;
+}
+
+.galerija img{
+    height: 350px;
+    width: 400px;
+}
+.picFrame{
+    background-color: gainsboro;
+    margin: 40px;
+}
+
+.textTop{
+    text-align: start;
+    margin: auto;
+    padding:10px 20px; 
+}
+.textBottom{
+    text-align: start;
+    margin: auto;
+    padding-left: 20px;
+    padding-right:20px;
+    margin-bottom: 10px;
+}
+
+.forma{
+    flex: 30%;
+    padding: 50px 70px;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+
+}
+
+.forma input{
+    width: 20vw;
+    height: 2vw;
+    font-size: large;
+    text-indent: 10px;
+    background-color: lightgreen;
+}
+
+.filterTextTop{
+    font-size: x-large;
+    font-weight: bold;
+    background-color: lightgray;
+}
+.filterText{
+    text-indent: 30px;
+    font-size: large;
+    background-color:lightgray;
+}
+.bottomBorder{
+    margin-top: 5px;
+    border-top: 1px solid black;
+}
