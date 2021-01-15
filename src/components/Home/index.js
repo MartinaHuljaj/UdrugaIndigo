@@ -17,11 +17,11 @@ const Home =()=>(
     </section>
     <section className={styles.galerijaOkvir}>
       <div className={styles.text}>Naši ljubimci: </div>
-      <div className={styles.galerija}><img src={pic1}></img></div>
-      <div className={styles.galerija}><img src={pic2}></img></div>
-      <div className={styles.galerija}><img src={pic3}></img></div>
-      <div className={styles.galerija}><img src={pic4}></img></div>
-      <div className={styles.galerija}><img src={pic5}></img></div>
+      <div className={styles.galerija}><img src={pic1} alt=""></img></div>
+      <div className={styles.galerija}><img src={pic2} alt=""></img></div>
+      <div className={styles.galerija}><img src={pic3} alt=""></img></div>
+      <div className={styles.galerija}><img src={pic4} alt=""></img></div>
+      <div className={styles.galerija}><img src={pic5} alt=""></img></div>
     </section>
     <section className={styles.citat}>
       <div>

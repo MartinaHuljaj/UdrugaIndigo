@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './style.module.css'
-import inst from './instagram.png'
-import face from './facebook.png'
+/* import inst from './instagram.png'
+import face from './facebook.png' */
 import {Link} from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faFacebook, faInstagram} from "@fortawesome/free-brands-svg-icons"
