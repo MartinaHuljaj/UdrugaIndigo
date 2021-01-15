@@ -1,7 +1,9 @@
 .form{
     width: 100%;
     display: flex;
-    justify-content: flex-start;
+    flex:50%;
+    border-right: 1px solid black;
+    
     flex-flow: column;
     flex-wrap: wrap;
     margin-bottom: 10px;
@@ -10,22 +12,22 @@
     line-height: 3vw;
     
 }
-form input{
+.input{
     width: 25vw;
-    min-width:250px ;
+    
     height: 2vw;
-    
-    
+    margin-inline-start: 20px;
+    justify-content: flex-end;
 }
-
 .p{
     font-family: 'Habibi';
     font-size:2vw;
     width:80%;
     margin-left: 20px;
-    
+    text-align: center;
     
 }
+
 .label{
     
     font-size:2vw;
@@ -41,4 +43,3 @@ form input{
     font-family:'Habibi';
     
 }
-

@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './style.module.css'
 import Image from '../Image'
-import cover from './5.png'
+import cover from '../../images/5.png'
 
 const ContactForm=()=>(
     <main>

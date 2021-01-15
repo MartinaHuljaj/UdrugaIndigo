@@ -1,13 +1,23 @@
-import React from 'react'
+import React, {useState} from 'react'
+import {navigate} from 'gatsby'
 import styles from './style.module.css'
 import Image from '../Image'
 import cover from '../../images/4.png'
 
-const Udomi =()=>(
+const Udomi =()=>{
+    const [user, setUser] = useState(localStorage.getItem('loggedIn'))
+
+    if (!user) {
+      setTimeout(() => navigate('/prijava'), 4000)
+      return <p className={styles.p}>
+        Potrebna je prijava.<br/>Preusmjeravamo vas na stranicu za prijavu...
+      </p>
+    }
+  
+
+return(
     <main>
-    <section>
-        <Image slika={cover}/>
-    </section>
+
     <section >
         <p className={styles.p}>Želiš udomiti jednog od naših ljubimaca?<br/> Ispuni formu za udomljavanje i mi ćemo ti se javiti s terminom za upoznavanje s ljubimcem što prije!</p>
     </section>
@@ -35,6 +45,6 @@ const Udomi =()=>(
         <button className={styles.button}>Udomi</button>
     </form>
     </main>  
-)
+)}
 
 export default Udomi

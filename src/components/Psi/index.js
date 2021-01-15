@@ -42,6 +42,7 @@ const Psi =()=>(
         <section className={styles.bottomBorder}>
 
         </section>
+        
     </main>
 )
 

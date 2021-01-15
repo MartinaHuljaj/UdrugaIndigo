@@ -3,7 +3,7 @@ export const nav=[
     {tab:'Mačke', to:'/'},
     {tab:'Kontakt', to:'/contact'},
     {tab:'Novosti', to:'/'},
-    {tab:'Prijava/registracija', to:'/'}
+    {tab:'Prijava/registracija', to:'/prijava'}
   ]
 
   export const nav2=[
