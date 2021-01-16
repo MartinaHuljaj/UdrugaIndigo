@@ -7,7 +7,7 @@ import {navigate} from 'gatsby'
 let users =JSON.parse(localStorage.getItem("users"))
 
 const PrijavaRegistracija=()=>{
-
+    
     const [username, setUserName] = useState()
     const [password, setPassword] = useState()
     const [error, setError] = useState(false)

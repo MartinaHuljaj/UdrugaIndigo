@@ -1,0 +1,30 @@
+.container {
+  display: inline-flex;
+  flex-flow: column;
+  align-items: flex-start;
+  
+}
+ 
+.list {
+  padding-left: 0;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  width: fit-content;
+  margin: 20px 100px;
+}
+ 
+.post {
+  
+  margin: 5px 10px;
+  width: min-content;
+}
+
+
+
+.sazetak{
+  
+  margin: 5px 10px;
+  width: min-content;
+  word-wrap: break-word;
+}
