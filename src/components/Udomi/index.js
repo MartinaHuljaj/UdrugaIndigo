@@ -5,7 +5,7 @@ import styles from './style.module.css'
 
 
 const Udomi =()=>{
-    const [user, setUser] = useState(localStorage.getItem('loggedIn'))
+    const [user] = useState(localStorage.getItem('loggedIn'))
 
     if (!user) {
       setTimeout(() => navigate('/prijava'), 4000)
