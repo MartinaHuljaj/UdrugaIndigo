@@ -13,7 +13,7 @@ exports.createPages = async ({ graphql, actions }) => {
     allContentfulBlogPost {
         nodes {
           summary 
-          post {post}
+          text{raw}
           title
           slug
           updatedAt
@@ -46,3 +46,4 @@ exports.createPages = async ({ graphql, actions }) => {
     slug: `novosti/${e.slug}`
   }))
 }
+

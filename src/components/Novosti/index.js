@@ -12,7 +12,7 @@ const Naslovna =()=>{
       allContentfulBlogPost {
         nodes {
           summary 
-          post {post}
+          text{raw}
           title
           slug
           updatedAt

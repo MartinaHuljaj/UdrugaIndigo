@@ -8,22 +8,22 @@ import Footer from '../components/Footer'
 
  
 const BlogPost = ({ pageContext }) => {
-    const { post, title, coverImage, summary, next, prev } = pageContext
+    const { text, title, coverImage, summary, next, prev } = pageContext
 
     return (
         
         <main className={styles.container}>
         <Header/>
-        <header className={!prev || !next ? styles.headerTwo : ''}>
+        { <header className={!prev || !next ? styles.headerTwo : ''}>
             {prev && (<Link to={`/novosti/${prev.slug}`}><span>Previous</span></Link>)}
             <h2>
             {title}
             </h2>
             {next && (<Link to={`/novosti/${next.slug}`}><span>Next</span></Link>)}
-        </header>
+        </header> }
         <Img fixed={coverImage.fixed} />
         <article>
-        {renderRichText(post)}
+        {renderRichText(text)}
         </article>
         <Footer/>
         </main>
