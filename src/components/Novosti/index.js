@@ -17,17 +17,18 @@ const Naslovna =()=>{
           slug
           updatedAt
           coverImage {
-            fixed(width:300) {
+            fluid {
+              aspectRatio
+              base64
+              sizes
               src
               srcSet
               srcSetWebp
               srcWebp
-              width
-              height
-              base64
-              aspectRatio
+              tracedSVG
             }
           }
+          
         }
       }
     }`)
@@ -41,7 +42,7 @@ const Naslovna =()=>{
             return (
               <Link to={`/novosti/${node.slug}`}>
                 <div className={styles.post}>
-                  <Img fixed={node.coverImage.fixed}  />
+                  <Img fluid={node.coverImage.fluid}  />
                   <h3>{node.title}</h3>
                   <span>{node.summary}</span>
                 </div>

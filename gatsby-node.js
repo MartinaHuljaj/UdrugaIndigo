@@ -18,17 +18,18 @@ exports.createPages = async ({ graphql, actions }) => {
           slug
           updatedAt
           coverImage {
-            fixed(width:300) {
+            fluid {
+              aspectRatio
+              base64
+              sizes
               src
               srcSet
               srcSetWebp
               srcWebp
-              width
-              height
-              base64
-              aspectRatio
+              
             }
           }
+          
         }
       }
   }`)
@@ -44,6 +45,84 @@ exports.createPages = async ({ graphql, actions }) => {
     },
     path: `novosti/${e.slug}`,
     slug: `novosti/${e.slug}`
+  }))
+}
+
+
+exports.createPages = async ({ graphql, actions }) => {
+  const raw = await graphql(`query {
+    allContentfulPsi {
+      nodes {
+          vaxine
+          title
+          slug
+          age
+          picture {
+            fixed(width: 300) {
+              aspectRatio
+              base64
+              height
+              src
+              srcSet
+              srcSetWebp
+              srcWebp
+              width
+            }
+          }
+          text {
+            raw
+          }
+        }
+    }
+  }`)
+ 
+  const res = raw.data.allContentfulPsi.nodes
+ 
+  res.forEach((e, index, array) => actions.createPage({
+    component: path.resolve(`./src/layouts/psi.js`),
+    path: `psi/${e.slug}`,
+    slug: `psi/${e.slug}`
+  }))
+}
+
+exports.createPages = async ({ graphql, actions }) => {
+  const raw = await graphql(`query {
+    allContentfulMacke {
+      nodes {
+          vaxine
+          title
+          slug
+          age
+          picture {
+            fixed(width: 300) {
+              aspectRatio
+              base64
+              height
+              src
+              srcSet
+              srcSetWebp
+              srcWebp
+              width
+            }
+          }
+          text {
+            raw
+          }
+        }
+    }
+  }`)
+ 
+  const res = raw.data.allContentfulMacke.nodes
+ 
+  res.forEach((e, index, array) => actions.createPage({
+    component: path.resolve(`./src/layouts/macke.js`),
+    context: {
+      ...e,
+      next: index < array.length ? array[index + 1] : null,
+      prev: index > 0 ? array[index - 1] : null
+    },
+    path: `macke/${e.slug}`,
+    slug: `macke/${e.slug}`
   }))
 }
 

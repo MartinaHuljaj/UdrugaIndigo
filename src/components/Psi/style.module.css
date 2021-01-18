@@ -66,3 +66,16 @@
     margin-top: 5px;
     border-top: 1px solid black;
 }
+
+.post {
+  
+    margin: 5px 10px;
+    width: min-content;
+  }
+
+  .container {
+    display: inline-flex;
+    flex-flow: column;
+    align-items: flex-start;
+    
+  }
