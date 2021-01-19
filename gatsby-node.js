@@ -64,6 +64,7 @@ exports.createPages = async ({ graphql, actions }) => {
         text{raw}
         title
         slug
+        createdAt
         coverImage {
           fluid {
             aspectRatio

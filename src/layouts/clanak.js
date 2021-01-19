@@ -7,19 +7,21 @@ import Footer from '../components/Footer'
 
  
 const BlogPost = ({ pageContext }) => {
-    const { text, title, coverImage } = pageContext
+    const { text, title, coverImage, createdAt } = pageContext
 
     return (
         
         <main >
-        <Header/>
-        
+        <Header/>   
         <Img fluid={coverImage.fluid} className={styles.image} />
-        <h1>{title}</h1>
+        <div className={styles.container}>
+        <h1 className={styles.naslov}>{title}</h1>
         
-        <article>
+        <article className={styles.clanak}>
         {renderRichText(text)}
         </article>
+
+        </div>
         <Footer/>
         </main>
 

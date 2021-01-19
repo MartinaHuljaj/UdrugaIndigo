@@ -1,50 +1,29 @@
-.container {
-    background-color: whitesmoke;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    padding: 0 100px;
-  }
-   
-  .container header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-   
-  .container .headerTwo {
-    width: 52vw;
-    margin-left: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-   
-  .container header span {
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 1px 1px 2px gray;
-    padding: 2px 4px;
-    background-color: white;
-  }
-   
-  .container article {
-    line-height: 25px;
-    font-size: 20px;
-  }
 
-  .image{
+.image{
+  height:25vw;
+  width:100%;
+  margin-bottom: 20px;
+  object-position:center;
+  z-index: -1;
     
-    height:25vw;
-    width:100%;
-    margin-bottom: 20px;
-    object-position: center;
-    z-index: -1;
-    padding-bottom:20px;
-    border-bottom: 1px solid black;
-
-  
 }
-  
+.container{
+  padding-bottom: 40px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+  border-top:1px solid black;
+}
+.naslov{
+  font-family: 'Habibi';
+  margin-left:10%;
+
+}
+.datum{
+  font-family: 'Habibi';
+}
+
+.clanak{
+  font-family: 'Habibi';
+  line-height: 25px;
+  margin:0 10%;
+}
