@@ -1,7 +1,7 @@
 import React from 'react'
 import { renderRichText } from "gatsby-source-contentful/rich-text"
 import Img from 'gatsby-image'
-import styles from './style.module.css'
+import styles from './macke.module.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Image from '../components/Image'

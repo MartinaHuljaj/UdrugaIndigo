@@ -8,7 +8,7 @@ import Image from '../Image'
 const Psi =()=>{
     const data=useStaticQuery(graphql`
     query {
-      allContentfulPsi {
+      allContentfulPsi (filter: { node_locale: { eq: "en-US" } }) {
         nodes {
             vaxine
             title

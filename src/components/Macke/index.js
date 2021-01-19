@@ -9,7 +9,7 @@ import Image from '../Image'
 const Macke =()=>{
     const data=useStaticQuery(graphql`
     query {
-      allContentfulMacke {
+      allContentfulMacke (filter: { node_locale: { eq: "en-US" } }){
         nodes {
             vaxine
             title

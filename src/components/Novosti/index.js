@@ -9,7 +9,7 @@ import Image from '../Image'
 const Naslovna =()=>{
     const data = useStaticQuery(graphql`
     query {
-      allContentfulBlogPost {
+      allContentfulBlogPost (filter: { node_locale: { eq: "en-US" } }) {
         nodes {
           summary 
           text{raw}
@@ -25,7 +25,7 @@ const Naslovna =()=>{
               srcSet
               srcSetWebp
               srcWebp
-              tracedSVG
+              
             }
           }
           
