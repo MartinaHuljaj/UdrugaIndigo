@@ -15,7 +15,7 @@ const Naslovna =()=>{
           text{raw}
           title
           slug
-          updatedAt
+          createdAt
           coverImage {
             fluid {
               aspectRatio
@@ -43,8 +43,9 @@ const Naslovna =()=>{
               <Link to={`/novosti/${node.slug}`}>
                 <div className={styles.post}>
                   <Img fluid={node.coverImage.fluid}  />
-                  <h3>{node.title}</h3>
-                  <span>{node.summary}</span>
+                  <h3 className={styles.datum}>{node.createdAt}</h3>
+                  <h3 className={styles.naslov}>{node.title}</h3>
+                  <span className={styles.sazetak}>{node.summary}</span>
                 </div>
               </Link>
             )
