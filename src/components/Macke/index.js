@@ -6,6 +6,7 @@ import cover from '../../images/1.png'
 import Image from '../Image'
 
 
+
 const Macke =()=>{
     const data=useStaticQuery(graphql`
     query {
