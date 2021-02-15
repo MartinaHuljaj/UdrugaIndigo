@@ -1,11 +1,11 @@
 import React, {useState} from 'react'
 import {navigate} from 'gatsby'
 import styles from './style.module.css'
-
+import {myLocalStorage} from '../../helper'
 
 
 const Udomi =()=>{
-    const [user] = useState(localStorage.getItem('loggedIn'))
+    const [user, setUser] = useState(myLocalStorage.getItem('loggedIn'))
 
     if (!user) {
       setTimeout(() => navigate('/prijava'), 4000)

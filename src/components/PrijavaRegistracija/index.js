@@ -3,8 +3,9 @@ import styles from './style.module.css'
 import Image from '../Image'
 import cover from '../../images/8.png'
 import {navigate} from 'gatsby'
+import {myLocalStorage} from '../../helper'
 
-let users =JSON.parse(localStorage.getItem("users"))
+let users =JSON.parse(myLocalStorage.getItem("users"))
 
 const PrijavaRegistracija=()=>{
     
@@ -20,7 +21,7 @@ const PrijavaRegistracija=()=>{
         let loginSuccessful = !!users.find(user => user.username === username && user.password === password)
         setLoading(false)
         if (loginSuccessful) {
-            localStorage.setItem("loggedIn", username)
+            myLocalStorage.setItem("loggedIn", username)
             setError('Success')
             return navigate('/')
         }
@@ -34,7 +35,7 @@ const PrijavaRegistracija=()=>{
             password: document.getElementById('lozinka').value
         }
         users.push(user);
-        localStorage.setItem("users",JSON.stringify(users))
+        myLocalStorage.setItem("users",JSON.stringify(users))
     }
 
 

@@ -2,10 +2,11 @@ import React from 'react'
 import {Link} from 'gatsby'
 import styles from './style.module.css'
 import {nav as navTabs} from '../../constants/const.js'
+import {myLocalStorage} from '../../helper'
 
-const loggedIn = () => !!localStorage.getItem('loggedIn')
-
-const Navigation = ({activeTab, useThisStyle})=>(
+const loggedIn = () => !!myLocalStorage.getItem('loggedIn')
+const Navigation = ({activeTab, useThisStyle})=>{
+return (
     <nav className={styles[useThisStyle || 'navigation']}>
         {navTabs.map(({tab, to}) => (
           <Link to={to} >
@@ -13,11 +14,12 @@ const Navigation = ({activeTab, useThisStyle})=>(
           </Link>)
         )}
                 <Link to={'/prijava'}>
-            <div onClick={loggedIn() ? () => localStorage.removeItem('loggedIn') : () => {}} onKeyPress={loggedIn() ? () => localStorage.removeItem('loggedIn') : () => {}} 
+            <div onClick={loggedIn() ? () => myLocalStorage.removeItem('loggedIn') : () => {}} onKeyPress={loggedIn() ? () => myLocalStorage.removeItem('loggedIn') : () => {}} 
             role="button" aria-hidden>
-                {loggedIn() ? 'Odjava' : 'Prijava/registracija'}
+                {loggedIn()=='0' ? 'Odjava' : 'Prijava/registracija'}
             </div>
         </Link>
     </nav>
 )
+}
 export default Navigation
