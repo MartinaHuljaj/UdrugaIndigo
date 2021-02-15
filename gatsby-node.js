@@ -90,6 +90,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const res = raw.data.allContentfulMacke.nodes
   const res2=raw.data.allContentfulPsi.nodes
   const res3=raw.data.allContentfulBlogPost.nodes 
+  console.log(res)
  
   res.forEach((e, index, array) => actions.createPage({
     component: path.resolve(`./src/layouts/macke.js`),
