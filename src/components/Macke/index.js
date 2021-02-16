@@ -10,7 +10,7 @@ import gql from 'graphql-tag'
 
 export default function Macke(){
 
-  const raw = gql`query {
+  const data = useStaticQuery(graphql`query {
     allContentfulMacke (filter: { node_locale: { eq: "en-US" } }){
       nodes {
           vaxine
@@ -34,10 +34,11 @@ export default function Macke(){
           }
         }
     }
-  }`
-  const fullData=raw.data.allContentfulMacke.nodes
-  const [arrayToShow, setArray]=useState(raw.data.allContentfulMacke.nodes)
-  const filters=["Axel"]
+  }`)
+  const fullData=data.allContentfulMacke.nodes
+  console.log(fullData)
+  const [arrayToShow, setArray]=useState(data.allContentfulMacke.nodes)
+  const filters=[12, "Da"]
 
     return(
         <main>
@@ -45,17 +46,22 @@ export default function Macke(){
             <section className={styles.container}>
                 <button onClick={()=>{
                   const filteredData=fullData.filter(
-                    node=>node.title.find("Axel")
+                    node=>node.age<=filters[0]
                   );
-                  setArray(filteredData)}}>Filtriraj</button>
+                  setArray(filteredData)}}>do godine dana</button>
+                    <button onClick={()=>{
+                  const filteredData=fullData.filter(
+                    node=>node.vaxine==filters[1]
+                  );
+                  setArray(filteredData)}}>Cijepljen</button>
 
-                <div className={styles.row} onClick={()=>setArray(fullData)}>Reset</div>
+                <button className={styles.row} onClick={()=>setArray(fullData)}>Prikazi sve</button>
                 {arrayToShow.map(node => {
                 return (
                     <Link to={`/macke/${node.slug}`}>
                     <div className={styles.post}>
                     <Img fixed={node.picture.fixed}  />
-                    <h3 className={styles.textBottom}>{node.title}/{node.age}</h3>
+                    <h3 className={styles.textBottom}>{node.title}/{node.age} mjeseci</h3>
                     </div>
                     </Link>
             )
