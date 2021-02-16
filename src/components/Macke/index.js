@@ -36,7 +36,8 @@ export default function Macke(){
     }
   }`)
   const fullData=data.allContentfulMacke.nodes
-  console.log(fullData)
+  
+  
   const [arrayToShow, setArray]=useState(data.allContentfulMacke.nodes)
   const filters=[12, "Da"]
 
@@ -56,6 +57,12 @@ export default function Macke(){
                   setArray(filteredData)}}>Cijepljen</button>
 
                 <button className={styles.row} onClick={()=>setArray(fullData)}>Prikazi sve</button>
+                <h3>Pretražite po imenu</h3>
+                <input onChange={e=>{
+                  const value=e.target.value;
+                  const newArray=fullData.filter((node)=>node.title.includes(value));
+                  setArray(newArray)
+                }}/>
                 {arrayToShow.map(node => {
                 return (
                     <Link to={`/macke/${node.slug}`}>
