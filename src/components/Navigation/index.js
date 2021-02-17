@@ -16,7 +16,7 @@ return (
                 <Link to={'/prijava'}>
             <div onClick={loggedIn() ? () => myLocalStorage.removeItem('loggedIn') : () => {}} onKeyPress={loggedIn() ? () => myLocalStorage.removeItem('loggedIn') : () => {}} 
             role="button" aria-hidden>
-                {loggedIn()=='0' ? 'Odjava' : 'Prijava/registracija'}
+                {loggedIn() ? 'Odjava' : 'Prijava/registracija'}
             </div>
         </Link>
     </nav>
