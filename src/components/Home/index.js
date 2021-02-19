@@ -15,13 +15,15 @@ const Home =()=>(
       <Slika  slika={cover}  />
       <div className={styles.clanak}>Dobro došli na stranicu udruge za zaštitu životinja Indigo!<pre className={styles.pod}>→Upoznaj nas</pre></div>
     </section>
+    <div className={styles.text}>Naši ljubimci: </div>
     <section className={styles.galerijaOkvir}>
-      <div className={styles.text}>Naši ljubimci: </div>
-      <div className={styles.galerija}><img src={pic1} alt=""></img></div>
-      <div className={styles.galerija}><img src={pic2} alt=""></img></div>
-      <div className={styles.galerija}><img src={pic3} alt=""></img></div>
-      <div className={styles.galerija}><img src={pic4} alt=""></img></div>
-      <div className={styles.galerija}><img src={pic5} alt=""></img></div>
+      <div className={styles.ljubimciFrame}>
+        <div className={styles.galerijaDiv}><a href="http://localhost:8000/psi" target="_self" rel="noopener noreferrer" className={styles.galerija}><img src={pic1} alt="Psi"></img></a></div>
+        <div className={styles.galerijaDiv}><a href="http://localhost:8000/macke" target="_self" rel="noopener noreferrer" className={styles.galerija}><img src={pic2} alt="Macke"></img></a></div>
+        <div className={styles.galerijaDiv}><a href="http://localhost:8000/macke" target="_self" rel="noopener noreferrer" className={styles.galerija}><img src={pic3} alt="Macke"></img></a></div>
+        <div className={styles.galerijaDiv}><a href="http://localhost:8000/psi" target="_self" rel="noopener noreferrer" className={styles.galerija}><img src={pic4} alt="Psi"></img></a></div>
+        <div className={styles.galerijaDiv}><a href="http://localhost:8000/psi" target="_self" rel="noopener noreferrer" className={styles.galerija}><img src={pic5} alt="Psi"></img></a></div>
+      </div>
     </section>
     <section className={styles.citat}>
       <div>
@@ -36,7 +38,6 @@ const Home =()=>(
       
       {/* Dodaj novosti! */}
       
-
     </section>
     <section>
       <p></p>

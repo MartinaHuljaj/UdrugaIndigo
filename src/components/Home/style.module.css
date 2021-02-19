@@ -1,5 +1,7 @@
 .container{
     position:relative;
+    margin: auto;
+    width: 90%;
 }
 .clanak{
     position:absolute;
@@ -19,22 +21,29 @@
 }
 .galerijaOkvir{
     border-bottom: 1px solid black;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
+    margin: auto;
+    width: 90%;
 }
-div.galerija img{
+
+div.ljubimciFrame{
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: auto;
+}
+div.galerijaDiv{
+    display: inline-block;
+}
+
+a.galerija img{
     width: 300px;
     height: 300px;
-    padding-top: 10px;
-    padding-right: auto;
-    padding-left: auto;
-    padding-bottom: 5px;
-    
-    
+    padding: 20px 20px;
 }
-div.galerija{
-    display: inline;
-    padding-left: 2%;
-    padding-right: 2%;
+
+div.galerijaDiv:hover{
+    background-color:lightgray;
+    color: lightgray;
 }
 .text{
     font-weight: bold;
@@ -43,16 +52,19 @@ div.galerija{
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: left;
+    margin: auto;
+    width: 90%;
 }
 .citat{
     font-size: x-large;
-    padding-top: 60px;
-    padding-bottom: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     text-align: center;
     border-bottom: 1px solid black;
+    margin:auto;
+    width: 90%;
 }
 .autor{
     font-size: large;
     text-align: center;
-
 }
