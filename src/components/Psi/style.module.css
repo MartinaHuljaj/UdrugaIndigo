@@ -1,32 +1,10 @@
-*{
-    box-sizing: border-box;
-}
-.row{
-    display: flex;
-}
-.galerija{
-    flex: 60%;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    border-right: 1px solid black;
-}
 
-.galerija img{
-    height: 350px;
-    width: 400px;
-}
-.picFrame{
-    background-color: #E7E5E5;
-    margin: 40px;
-}
-
-.textTop{
-    text-align: start;
+.container {
+    position: relative;
     margin: auto;
-    padding:10px 20px; 
-}
+    width: 90%;
+  }
+
 .textBottom{
     text-align: start;
     margin: auto;
@@ -35,47 +13,30 @@
     margin-bottom: 10px;
 }
 
-.forma{
-    flex: 30%;
-    padding: 50px 70px;
-    position: sticky;
-    top: 0;
-    align-self: flex-start;
-
+.buttonContainer {
+    margin-left: 80%;
 }
 
-.forma input{
-    width: 20vw;
-    height: 2vw;
-    font-size: large;
-    text-indent: 10px;
-    background-color: lightgreen;
+.buttons{
+    margin-top: 20px;
 }
 
-.filterTextTop{
-    font-size: x-large;
+.filterText {
     font-weight: bold;
-    background-color: #E7E5E5;
+    font-size: x-large;
 }
-.filterText{
-    text-indent: 30px;
-    font-size: large;
-    background-color: #E7E5E5;
+.inputBar {
+    width: 80%;
+    height: 30px;
+    margin-top: -50%;
 }
-.bottomBorder{
-    margin-top: 5px;
-    border-top: 1px solid black;
+
+.gallery {
+    margin-top: -11%;
+    margin-left: 4%;
 }
 
 .post {
-  
-    margin: 5px 10px;
-    width: min-content;
-  }
-
-  .container {
-    display: inline-flex;
-    flex-flow: column;
-    align-items: flex-start;
-    
-  }
+    display: inline-block;
+    margin-right: 10%;
+}

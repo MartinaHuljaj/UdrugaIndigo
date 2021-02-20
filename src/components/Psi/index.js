@@ -42,26 +42,30 @@ export default function Psi(){
 
     return(
       <main>
-        <Image slika={cover}/>
         <section className={styles.container}>
-          <button onClick={()=>{
-          const filteredData=fullData.filter(
-            node=>node.age<=filters[0]
-          );setArray(filteredData)}}>Do godine dana</button>
-
-          <button onClick={()=>{
-          const filteredData=fullData.filter(
-          node=>node.vaxine==filters[1]
-          );setArray(filteredData)}}>Cijepljeni</button>
-
-          <button className={styles.row} onClick={()=>setArray(fullData)}>Prikaži sve</button>
-            
-          <h3>Pretražite po imenu</h3>
-          <input onChange={e=>{
+        <Image slika={cover}/>
+        <div className={styles.buttonContainer}>
+        <p className={styles.filterText}>Pretražite po imenu</p>
+          <input className={styles.inputBar} onChange={e=>{
             const value=e.target.value;
             const newArray=fullData.filter((node)=>node.title.includes(value));
             setArray(newArray)
           }}/>
+
+          <div className={styles.buttons}><button onClick={()=>{
+          const filteredData=fullData.filter(
+            node=>node.age<=filters[0]
+          );setArray(filteredData)}}>Do godine dana</button></div>
+
+          <div className={styles.buttons}><button onClick={()=>{
+          const filteredData=fullData.filter(
+          node=>node.vaxine==filters[1]
+          );setArray(filteredData)}}>Cijepljeni</button></div>
+
+          <div className={styles.buttons}><button onClick={()=>setArray(fullData)}>Prikaži sve</button></div>
+            
+        </div>
+        <div className={styles.gallery}>
           {arrayToShow.map(node => {
           return (
               <Link to={`/psi/${node.slug}`}>
@@ -72,6 +76,7 @@ export default function Psi(){
               </Link>
             )
           })} 
+        </div>
         </section>
 
       </main>
