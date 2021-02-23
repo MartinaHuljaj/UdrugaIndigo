@@ -1,4 +1,6 @@
-
+*{
+    box-sizing: border-box;
+}
 .container {
     position: relative;
     margin: auto;
@@ -7,36 +9,56 @@
 
 .textBottom{
     text-align: start;
-    margin: auto;
-    padding-left: 20px;
-    padding-right:20px;
-    margin-bottom: 10px;
 }
 
 .buttonContainer {
-    margin-left: 80%;
+    width: 30%;
+    float: right;
+    margin-top: 1%;
 }
 
-.buttons{
-    margin-top: 20px;
+.buttonContainer > input {
+    display: block;
+    margin-left: 17%;
+    margin-bottom: 6%;
+}
+
+.buttonContainer > button {
+    display: block;
+    margin-left: 17%;
+    margin-top: 2%;
 }
 
 .filterText {
     font-weight: bold;
     font-size: x-large;
+    margin-left: 17%;
+    margin-bottom: 3px;
 }
+
 .inputBar {
-    width: 80%;
+    width: 50%;
     height: 30px;
-    margin-top: -50%;
 }
 
 .gallery {
-    margin-top: -11%;
-    margin-left: 4%;
+    width: 70%;
+    float: right;
+    border-right: 1px black solid;
 }
 
 .post {
     display: inline-block;
-    margin-right: 10%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-left: 20px; 
+    margin-right: 20px; 
 }
+
+.boxContainer::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
