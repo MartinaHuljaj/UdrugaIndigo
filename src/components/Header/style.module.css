@@ -2,4 +2,17 @@
     height: 120px;
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+  }
+
+  @media (max-width: 810px){
+    .header{
+      flex-direction: column;
+      height:240px;
+    }
+    .navigation{
+      flex-basis: 100%;
+      margin-left: 20%;
+    }
+    
   }

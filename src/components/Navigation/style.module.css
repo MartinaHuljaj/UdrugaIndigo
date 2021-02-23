@@ -7,9 +7,14 @@
     min-width: 0;
     width: fit-content;
     font-family: 'Habibi';
+<<<<<<< Updated upstream
 
 
 
+=======
+    margin-right: 5%;
+    margin-top: 2%;  
+>>>>>>> Stashed changes
   }
 .navigation div {
     padding: 14px 15px;
@@ -29,3 +34,12 @@
     border-bottom: 2px solid black ;
   }
 
+@media (max-width:810px){
+  .navigation{
+    margin-left: 7%;
+  }
+  .navigation div{
+    line-height: 50px;
+    
+  }
+}

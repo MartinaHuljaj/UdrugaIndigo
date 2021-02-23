@@ -5,8 +5,8 @@ import styles from './style.module.css'
 
 const Header =({activeTab})=>(
     <section className={styles.header}>
-        <Logo/>
-        <Navigation activeTab={activeTab}/>
+        <Logo />
+        <Navigation className={styles.navigation} activeTab={activeTab}/>
     </section>
 )
 export default Header

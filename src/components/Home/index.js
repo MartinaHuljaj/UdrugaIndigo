@@ -9,8 +9,10 @@ import pic4 from './4.jpg'
 import pic5 from './5.jpg'
 
 
+
 const Home =()=>(
     <main>
+   
     <section  className={styles.container}>
       <Slika  slika={cover}  />
       <div className={styles.clanak}>Dobro došli na stranicu udruge za zaštitu životinja Indigo!<pre className={styles.pod}>→Upoznaj nas</pre></div>

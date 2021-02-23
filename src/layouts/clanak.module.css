@@ -26,4 +26,6 @@
   font-family: 'Habibi';
   line-height: 25px;
   margin:0 10%;
+  max-width: 75ch;
+  text-align: left;
 }
