@@ -41,22 +41,23 @@ const PrijavaRegistracija=()=>{
 
     return (
         <main>
+            <section className={styles.bigBox}>
             <Image slika={cover}/>
             <div className={styles.forme}>
                 <section className={styles.login}>
                     <p className={styles.p}>Prijava</p>
-                    <section >
+                    <div>
                         <label htmlFor="username" className={styles.label}>
                         Mail   
                         </label>
                         <input name="username" onChange={e => setUserName(e.target.value)} className={styles.input}/>
-                    </section>
-                    <section>
+                    </div>
+                    <div>
                         <label htmlFor="password" className={styles.label}>
                         Lozinka
                         </label>
                         <input name="password" type="password" onChange={e => setPassword(e.target.value)} className={styles.input} />
-                    </section>
+                    </div>
                     <p className={`${styles[error !== "Success" ? 'error' : 'success']} ${error ? styles.show : ''}`}>{error}</p>
                     <button className={styles.button} onClick={() => submit()}>
                         {loading ? 'Učitavanje...' : 'Prijava'}
@@ -66,44 +67,45 @@ const PrijavaRegistracija=()=>{
                 <section className={styles.register}>  
                     <p className={styles.p}>Registracija</p>
 
-                    <section>
+                    <div>
                         <label className={styles.label}>
                             Ime
                             <input type="text" className={styles.input} required />
                         </label>
-                    </section>
+                    </div>
 
-                    <section>
+                    <div>
                         <label className={styles.label}>
                             Prezime
                             <input type="text" className={styles.input} required />
                         </label>
-                    </section>
+                    </div>
 
-                    <section>
+                    <div>
                         <label className={styles.label}>
                             Mail
                             <input type="email" id="mail" className={styles.input} required/>
                         </label>
-                    </section>
-                    <section>
+                    </div>
+                    <div>
                         <label className={styles.label}>
                             Lozinka
                             <input type="password" id="lozinka" className={styles.input} required />
                             </label>
-                    </section>
+                    </div>
 
-                    <section>
+                    <div>
                         <label className={styles.label}>
                             Ponovi lozinku
                             <input type="password" className={styles.input} required />
                         </label>
-                    </section>
+                    </div>
 
                     <button className={styles.button} onClick={()=> register()}>Registriraj se</button>
     
                 </section>
             </div>
+            </section>
         </main>
         )}
 

@@ -1,57 +1,73 @@
+.bigBox {
+    width:90%;
+    margin: auto;
+}
+
 .forme{
     display:flex;
     margin-bottom: 10px;
-    border-bottom: 1px solid black;
-    
+    border-bottom: 1px solid black;  
 }
 
-.login{
-    
+.login{   
     flex:50%;
-    border-right: 1px solid black;
-    margin:20px 50px;
-    text-indent: 20px;
+    display:flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
     line-height: 3vw;
-    
-    
+    background-color: #E7E5E5;
+    border-radius: 8px;
+    margin:20px 7%;
+
 }
 .register{
     flex:50%;
-    margin-bottom:20px ;
-    margin-top: 20px;
-    text-indent: 20px;
+    display:flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
     line-height: 3vw;
-    
-
+    background-color: #E7E5E5;
+    margin: 20px 7%;
+    border-radius: 8px;
 }
 
 .input{
-    display:flex;
-    height: 2vw;
-    margin-inline-start: 20px;
-
+    display: flex;
+    align-items:flex-start;
+    margin-top: -5%;
 }
 .p{
     font-family: 'Habibi';
-    font-size:2vw;
-    width:80%;
-    
-    text-align: center;
-    
+    font-size:2vw;   
 }
 
-.label{
-    
-    font-size:2vw;
+.label{  
+    display: flex;
+    flex-flow: column wrap;
+    align-items:flex-start;
+    font-size:x-large;
+    font-weight: bold;
     font-family:'Habibi';
-    line-height: 50px;
-    
 }
 .button{
+    display: block;
     width:auto;
     text-align: left;
-    margin:1.5vw 0 3vw 20px;
+    margin-top: 4%;
+    margin-bottom: 4%;
     font-size:2vw;
     font-family:'Habibi';
     
+}
+@media screen and (max-width: 1100px){
+    .label {
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }
+    .input{
+        margin: auto;
+    }
+
 }
