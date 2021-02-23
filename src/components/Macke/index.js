@@ -44,7 +44,7 @@ export default function Macke(){
         <div className={styles.boxContainer}>
           <div className={styles.buttonContainer}>
           <p className={styles.filterText}>Pretražite po imenu</p>
-            <input onChange={e=>{
+            <input className={styles.inputBar} onChange={e=>{
               const value=e.target.value;
               const newArray=fullData.filter((node)=>node.title.includes(value));
               setArray(newArray)
@@ -67,7 +67,7 @@ export default function Macke(){
             return (
                 <Link to={`/macke/${node.slug}`}>
                 <div className={styles.post}>
-                <Img fixed={node.picture.fixed}  />
+                <Img fixed={node.picture.fixed}  className={styles.imgObj}/>
                 <h3 className={styles.textBottom}>{node.title}/{node.age} mjeseci/a</h3>
                 </div>
                 </Link>

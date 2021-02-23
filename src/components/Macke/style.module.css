@@ -37,8 +37,10 @@
 }
 
 .inputBar {
-    width: 50%;
-    height: 30px;
+    font-size: large;
+    display:inline-block;
+    padding: 5px 10px;
+    margin:auto;
 }
 
 .gallery {
@@ -48,7 +50,6 @@
 }
 
 .post {
-    z-index: -1;
     display: inline-block;
     padding-top: 20px;
     padding-left: 20px;
@@ -65,7 +66,7 @@
     }
 
 .post:hover {
-    background-color:lightgray;
+    background-color:#E7E5E5;
 }
 
 .boxContainer {
@@ -73,4 +74,16 @@
     padding-bottom: 1%;
     padding-top: 1%;
     border-bottom: 1px solid black;
+}
+
+@media screen and (max-width: 600px){
+     .imgObj{
+        max-width: 200px;
+        max-height: 200px;
+    } 
+}
+@media screen and (max-width: 1400px){
+    .inputBar{
+        max-width: 83%;
+    }
 }

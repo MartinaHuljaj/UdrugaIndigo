@@ -44,8 +44,9 @@
 }
 
 .inputBar {
-    width: 50%;
-    height: 30px;
+    font-size: large;
+    display:inline-block;
+    padding: 5px 10px;
 }
 
 .gallery {
@@ -55,7 +56,6 @@
 }
 
 .post {
-    z-index: -1;
     display: inline-block;
     padding-top: 20px;
     padding-left: 20px;
@@ -71,6 +71,18 @@
     display: table;
     }
 
-    .post:hover {
-        background-color:lightgray;
-    }
+.post:hover {
+    background-color:#E7E5E5;
+}
+
+@media screen and (max-width: 600px){
+    .imgObj{
+       max-width: 200px;
+       max-height: 200px;
+   } 
+}
+@media screen and (max-width: 1400px){
+   .inputBar{
+       max-width: 83%;
+   }
+}

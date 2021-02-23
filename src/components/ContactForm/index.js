@@ -5,33 +5,33 @@ import cover from '../../images/5.png'
 
 const ContactForm=()=>(
     <main>
-    <Image slika={cover}/>
-    <section >
-        <p className={styles.p}>Imaš pitanja za nas?<br/>Slobodno nam se javi! :D</p>
-    </section>
-    <form className={styles.form}>
-        <div>
-            <label className={styles.label} htmlFor="ime">Ime</label>
-            <br/>
-            <input  name="ime" type="text"/>
-        </div>
-        <div>
-            <label className={styles.label} htmlFor="prezime">Prezime</label>
-            <br/>
-            <input name="prezime" type="text"/>
-        </div>
-        <div>
-            <label className={styles.label} htmlFor="mail">Mail</label>
-            <br/>
-            <input name="mail" type="email"/>
-        </div>
-        <div>
-            <label className={styles.label} htmlFor="poruka">Poruka</label>
-            <br/>
-            <input className={styles.poruka} name="poruka" type="text"/>
-        </div>
-        <button className={styles.button}>Pošalji</button>
-    </form>
+        <section className={styles.container}>
+            <Image slika={cover}/>
+            <p className={styles.p}>Imaš pitanja za nas? Slobodno nam se javi!<br/>Na upit odgovaramo putem unesenog e-maila.</p>
+            <form className={styles.form}>
+                <div>
+                    <label className={styles.label} htmlFor="ime">Ime:</label>
+
+                    <input className={styles.field} name="ime" type="text" placeholder="Vaše ime ovdje..."/>
+                </div>
+                <div>
+                    <label className={styles.label} htmlFor="prezime">Prezime:</label>
+
+                    <input className={styles.field} name="prezime" type="text" placeholder="Vaše prezime ovdje..."/>
+                </div>
+                <div>
+                    <label className={styles.label} htmlFor="mail">Mail:</label>
+
+                    <input className={styles.field} name="mail" type="email" placeholder="Vaša e-mail adresa ovdje..."/>
+                </div>
+                <div>
+                    <label className={styles.label} htmlFor="poruka">Poruka:</label>
+
+                    <input className={styles.poruka} name="poruka" type="text" placeholder="Vaša poruka ovdje..."/>
+                </div>
+                <button className={styles.button}>Pošalji</button>
+            </form>
+        </section>
     </main>
 )
 
