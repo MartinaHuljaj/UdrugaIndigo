@@ -7,6 +7,13 @@
     width: 90%;
   }
 
+.boxContainer {
+    margin-bottom: 1%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    border-bottom: 1px solid black;
+}
+
 .textBottom{
     text-align: start;
 }
@@ -48,6 +55,7 @@
 }
 
 .post {
+    z-index: -1;
     display: inline-block;
     padding-top: 20px;
     padding-left: 20px;
@@ -61,4 +69,8 @@
     content: "";
     clear: both;
     display: table;
+    }
+
+    .post:hover {
+        background-color:lightgray;
     }

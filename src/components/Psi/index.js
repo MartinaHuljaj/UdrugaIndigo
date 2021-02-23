@@ -72,7 +72,7 @@ export default function Psi(){
                 <Link to={`/psi/${node.slug}`}>
                 <div className={styles.post}>
                 <Img fixed={node.picture.fixed} className={styles.picture} />
-                <h3 className={styles.textBottom}>{node.title}/{node.age} mjeseci/a</h3>
+                <h3 className={styles.textBottom}>{node.title}/mjeseci: {node.age}</h3>
                 </div>
                 </Link>
               )

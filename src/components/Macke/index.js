@@ -15,7 +15,7 @@ export default function Macke(){
           slug
           age
           picture {
-            fixed(width: 300) {
+            fixed(width: 300, height: 300) {
               aspectRatio
               base64
               height
@@ -39,38 +39,43 @@ export default function Macke(){
 
     return(
       <main>
-        <Image slika={cover}/>
         <section className={styles.container}>
-          <button onClick={()=>{
-          const filteredData=fullData.filter(
-            node=>node.age<=filters[0]
-          );setArray(filteredData)}}>Do godine dana</button>
+        <Image slika={cover}/>
+        <div className={styles.boxContainer}>
+          <div className={styles.buttonContainer}>
+          <p className={styles.filterText}>Pretražite po imenu</p>
+            <input onChange={e=>{
+              const value=e.target.value;
+              const newArray=fullData.filter((node)=>node.title.includes(value));
+              setArray(newArray)
+            }}/>
 
-          <button onClick={()=>{
-          const filteredData=fullData.filter(
-          node=>node.vaxine==filters[1]
-          );setArray(filteredData)}}>Cijepljeni</button>
+            <button onClick={()=>{
+            const filteredData=fullData.filter(
+              node=>node.age<=filters[0]
+            );setArray(filteredData)}}>Do godine dana</button>
 
-          <button className={styles.row} onClick={()=>setArray(fullData)}>Prikaži sve</button>
-            
-          <h3>Pretražite po imenu</h3>
-          <input onChange={e=>{
-            const value=e.target.value;
-            const newArray=fullData.filter((node)=>node.title.includes(value));
-            setArray(newArray)
-          }}/>
-          {arrayToShow.map(node => {
-          return (
-              <Link to={`/macke/${node.slug}`}>
-              <div className={styles.post}>
-              <Img fixed={node.picture.fixed}  />
-              <h3 className={styles.textBottom}>{node.title}/{node.age} mjeseci/a</h3>
-              </div>
-              </Link>
-            )
-          })} 
+            <button onClick={()=>{
+            const filteredData=fullData.filter(
+            node=>node.vaxine==filters[1]
+            );setArray(filteredData)}}>Cijepljeni</button>
+
+            <button className={styles.row} onClick={()=>setArray(fullData)}>Prikaži sve</button>
+            </div>
+            <div className={styles.gallery}>
+            {arrayToShow.map(node => {
+            return (
+                <Link to={`/macke/${node.slug}`}>
+                <div className={styles.post}>
+                <Img fixed={node.picture.fixed}  />
+                <h3 className={styles.textBottom}>{node.title}/{node.age} mjeseci/a</h3>
+                </div>
+                </Link>
+              )
+            })} 
+            </div>
+          </div>
         </section>
-
       </main>
     )
 }
