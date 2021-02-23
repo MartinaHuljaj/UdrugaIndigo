@@ -16,7 +16,7 @@ const Macka =({pageContext})=>{
             <Image slika={cover}/>
             <Img fixed={picture.fixed}/>
             <h1>Ime: {title}</h1>
-            <h1>Dob: {age}</h1>
+            <h1>Dob (mjeseci): {age}</h1>
             <h1>Cijepljen/a: {vaxine}</h1>
             <article>
                 {renderRichText(text)}

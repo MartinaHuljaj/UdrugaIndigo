@@ -1,16 +1,22 @@
 .container{
     position:relative;
+    margin: auto;
+    width: 90%;
 }
 .clanak{
-    position:absolute;
-    bottom:30px;
-    right:20px;
+    position:absolute; 
     width:30%;
     height: 15vw;
     padding:20px;
     font-family: 'Habibi';
     font-size:1.7vw;
-    background-color: rgb(196,196,196,0.8) ;
+    background-color: rgb(196,196,196,0.8);
+    margin-top: -20%;
+    margin-left: 65%;
+}
+
+.coverImage {
+    z-index: -1;
 }
 .clanak .pod{
     font-size:1vw;
@@ -19,22 +25,27 @@
 }
 .galerijaOkvir{
     border-bottom: 1px solid black;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }
-div.galerija img{
+
+div.ljubimciFrame{
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: auto;
+}
+div.galerijaDiv{
+    display: inline-block;
+}
+
+a.galerija img{
     width: 300px;
     height: 300px;
-    padding-top: 10px;
-    padding-right: auto;
-    padding-left: auto;
-    padding-bottom: 5px;
-    
-    
+    padding: 20px 20px;
 }
-div.galerija{
-    display: inline;
-    padding-left: 2%;
-    padding-right: 2%;
+
+div.galerijaDiv:hover{
+    background-color:lightgray;
+    color: lightgray;
 }
 .text{
     font-weight: bold;
@@ -43,16 +54,16 @@ div.galerija{
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: left;
+
 }
 .citat{
     font-size: x-large;
-    padding-top: 60px;
-    padding-bottom: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     text-align: center;
     border-bottom: 1px solid black;
 }
 .autor{
     font-size: large;
     text-align: center;
-
 }

@@ -17,32 +17,31 @@ const Naslovna =()=>{
           slug
           createdAt
           coverImage {
-            fluid {
+            fixed(width: 275, height: 200) {
               aspectRatio
               base64
-              sizes
+              height
               src
               srcSet
               srcSetWebp
               srcWebp
-              
+              width
             }
-          }
-          
+          }  
         }
       }
     }`)
  
     return (
     <main>
-      <Image slika={cover}/>
       <section className={styles.container}>
+        <Image slika={cover}/>
         <div className={styles.list}>
           {data.allContentfulBlogPost.nodes.map(node => {
             return (
               <Link to={`/novosti/${node.slug}`}>
                 <div className={styles.post}>
-                  <Img fluid={node.coverImage.fluid}  />
+                  <Img fixed={node.coverImage.fixed}  />
                   <h3 className={styles.datum}>{node.createdAt}</h3>
                   <h3 className={styles.naslov}>{node.title}</h3>
                   <span className={styles.sazetak}>{node.summary}</span>

@@ -1,49 +1,73 @@
-.form{
-    width: 100%;
+.container{
     display: flex;
-    justify-content: flex-start;
-    flex-flow: column;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
+    margin: auto;
+    width: 90%;
+    flex-flow: column wrap;
+    align-items:center;
     border-bottom: 1px solid black;
-    text-indent: 20px;
-    line-height: 3vw;
-    
-}
-form input{
-    width: 25vw;
-    min-width:250px ;
-    height: 2vw;
-    margin-inline-start: 20px;
+    margin-bottom: 1%;
 }
 
-.p{
+.form{
+    text-indent: 20px;
+    line-height: 3vw;   
+    background-color: #E7E5E5;
+    padding-left: 20px;
+    padding-right: 40px;
+    margin-bottom: 1%;
+    border: none;
+    border-radius: 8px;
+}
+
+.p{  
     font-family: 'Habibi';
     font-size:2vw;
-    width:80%;
-    margin-left:20px;
-    margin-bottom: 20px;
-    
-    
-    
 }
 .label{
-    
-    font-size:2vw;
+    display: flex;
+    flex-flow: column wrap;
+    align-items:flex-start;
+    font-size:x-large;
+    font-weight: bold;
     font-family:'Habibi';
-    margin:100px 0;
-    
-}
-.button{
-    width:10vw;
-    text-align: left;
-    margin:1.5vw 0 3vw 20px;
-    font-size:2vw;
-    font-family:'Habibi';
-    
+    margin-bottom: -3%;
 }
 
+.field {
+    display: flex;
+    flex-flow: column wrap;
+    align-items:flex-end;
+}
+
+.button{
+    display: block;
+    margin: 5% auto;
+    width:10vw;
+    text-align: center;
+    font-size:xx-large;
+    font-weight: bold;
+    font-family:'Habibi';
+    transition-duration: 0.5s;
+}
+
+.button:hover{
+    background-color: lightgreen;
+    border: 3px solid black;
+}
 .poruka{
-    height:15vh;
-    
+    height:150px; 
+}
+
+@media screen and (max-width: 1100px){
+    .label {
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }
+    .button {
+        min-width: fit-content;
+        min-height: 40px;
+    }
+    .field{
+        min-height: 20px;
+    }
 }

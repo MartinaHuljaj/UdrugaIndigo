@@ -1,85 +1,89 @@
 *{
     box-sizing: border-box;
 }
-.row{
-    display: flex;
-}
-.galerija{
-    flex: 60%;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    border-right: 1px solid black;
-}
-
-.galerija img{
-    height: 350px;
-    width: 400px;
-}
-.picFrame{
-    background-color: #E7E5E5;
-    margin: 40px;
-}
-
-.textTop{
-    text-align: start;
+.container {
+    position: relative;
     margin: auto;
-    padding:10px 20px; 
-}
+    width: 90%;
+  }
+
 .textBottom{
     text-align: start;
-    margin: auto;
-    padding-left: 20px;
-    padding-right:20px;
-    margin-bottom: 10px;
 }
 
-.forma{
-    flex: 30%;
-    padding: 50px 70px;
-    position: sticky;
-    top: 0;
-    align-self: flex-start;
-
+.buttonContainer {
+    width: 30%;
+    float: right;
+    margin-top: 1%;
 }
 
-.forma input{
-    width: 20vw;
-    height: 2vw;
-    font-size: large;
-    text-indent: 10px;
-    background-color: lightgreen;
+.buttonContainer > input {
+    display: block;
+    margin-left: 17%;
+    margin-bottom: 6%;
 }
 
-.filterTextTop{
-    font-size: x-large;
+.buttonContainer > button {
+    display: block;
+    margin-left: 17%;
+    margin-top: 2%;
+}
+
+.filterText {
     font-weight: bold;
-    background-color: #E7E5E5;
-}
-.filterText{
-    text-indent: 30px;
-    font-size: large;
-    background-color:#E7E5E5;
-}
-.bottomBorder{
-    margin-top: 5px;
-    border-top: 1px solid black;
+    font-size: x-large;
+    margin-left: 17%;
+    margin-bottom: 3px;
 }
 
-.galerija button {
-    border-style: hidden;
+.inputBar {
+    font-size: large;
+    display:inline-block;
+    padding: 5px 10px;
+    margin:auto;
+}
+
+.gallery {
+    width: 70%;
+    float: right;
+    border-right: 1px black solid;
 }
 
 .post {
-  
-    margin: 5px 10px;
-    width: min-content;
-  }
+    display: inline-block;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-left: 20px; 
+    margin-right: 20px; 
+}
 
-  .container {
-    display: inline-flex;
-    flex-flow: column;
-    align-items: flex-start;
-    
-  }
+.boxContainer::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+
+.post:hover {
+    background-color:#E7E5E5;
+}
+
+.boxContainer {
+    margin-bottom: 1%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    border-bottom: 1px solid black;
+}
+
+@media screen and (max-width: 600px){
+     .imgObj{
+        max-width: 200px;
+        max-height: 200px;
+    } 
+}
+@media screen and (max-width: 1400px){
+    .inputBar{
+        max-width: 83%;
+    }
+}

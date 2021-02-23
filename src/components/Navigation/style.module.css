@@ -8,15 +8,14 @@
     width: fit-content;
     font-family: 'Habibi';
     margin-right: 5%;
-    margin-top: 2%;  
+    margin-top: 2%;
   }
 .navigation div {
-    padding: 14px 15px;
+    padding:0px 15px;
     list-style: none;
     width: fit-content;
     font-size: 2vw;
-    line-height: 80px;
-    
+    line-height: 90px;  
     color: #555
 }
 .navigation div:hover {

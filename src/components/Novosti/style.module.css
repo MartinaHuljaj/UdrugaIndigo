@@ -1,26 +1,25 @@
 .container {
-  display:inline-flex;
-  flex-flow: row;
-  align-items: flex-start;
+  width: 90%;
+  margin: auto;
   font-family: 'Habibi';
-  margin-bottom: 10px;
+  margin-bottom: 1%;
   border-bottom: 1px solid black;
-  
 }
- 
+
 .list {
-  padding-left: 0;
-  display: flex;
-  flex-direction: row;
+  display: inline-flex;
+  justify-items: center;
   flex-wrap: wrap;
-  margin: 25px 50px;
-  justify-content: space-around;
+  margin: 1% 2%;
 }
  
 .post {
-  margin: 15px 10px 40px 10px;
+  margin:2% 12px;
   width:300px;
+  padding-top: 12px;
+  padding-left: 12px;
 }
+
 .datum{
   font-size: 12px;
   margin-bottom: 1px;
@@ -33,4 +32,8 @@
   padding-top: -10px;
   width: min-content;
   word-wrap: break-word;
+}
+
+.post:hover{
+  background-color: #E7E5E5;
 }
