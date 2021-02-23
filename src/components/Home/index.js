@@ -7,10 +7,39 @@ import pic2 from './2.jpg'
 import pic3 from './3.jpg'
 import pic4 from './4.jpg'
 import pic5 from './5.jpg'
+import {useStaticQuery, graphql, Link} from 'gatsby'
+import Img from 'gatsby-image'
+import stylesnav from '../Novosti/style.module.css'
 
 
 
-const Home =()=>(
+const Home =()=>{
+  const data = useStaticQuery(graphql`
+query {
+  allContentfulBlogPost (filter: { node_locale: { eq: "en-US" } }) {
+    nodes {
+      summary 
+      text{raw}
+      title
+      slug
+      createdAt
+      coverImage {
+        fixed(width: 275, height: 200) {
+          aspectRatio
+          base64
+          height
+          src
+          srcSet
+          srcSetWebp
+          srcWebp
+          width
+        }
+      }  
+    }
+  }
+}`)
+
+  return(
     <main>
    
     <section  className={styles.container}>
@@ -34,9 +63,22 @@ const Home =()=>(
       </div>
       <p className={styles.autor}>Hana, Split</p>
     </section>
-    <section>
+    <section className={styles.nav}>
       <div className={styles.text}>Novosti:</div>
-      
+      <div className={stylesnav.list}>
+          {data.allContentfulBlogPost.nodes.slice(0,3).map(node => {
+            return (
+              <Link to={`/novosti/${node.slug}`}>
+                <div className={stylesnav.post}>
+                  <Img fixed={node.coverImage.fixed}  />
+                  <h3 className={stylesnav.datum}>{node.createdAt}</h3>
+                  <h3 className={stylesnav.naslov}>{node.title}</h3>
+                  <span className={stylesnav.sazetak}>{node.summary}</span>
+                </div>
+              </Link>
+            )
+          })}
+        </div>
       {/* Dodaj novosti! */}
       
     </section>
@@ -46,5 +88,5 @@ const Home =()=>(
     </section>
     </main>
     
-    )
+    )}
 export default Home

@@ -29,10 +29,11 @@
 
 @media (max-width:810px){
   .navigation{
-    margin-left: 7%;
+    margin-left: 6%;
   }
   .navigation div{
     line-height: 50px;
+    font-size: 3vw;
     
   }
 }
