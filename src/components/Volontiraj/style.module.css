@@ -22,10 +22,11 @@
     padding-right: 10%;
     
 }
-form input{
-    min-height: 3vh;
+.form input{
+    width: 25vw;
+    min-width:150px ;
+    min-height: 2vw;
     margin-bottom: 3%;
-    margin-top: 1px;
 }
 
 .p{
@@ -38,7 +39,6 @@ form input{
 .label{
     font-size:2vh;
     font-family:'Habibi';
-    padding-bottom: 3%;
     
 }
 .button{
@@ -59,11 +59,16 @@ form input{
 .button:hover{
     background-color: darkgrey;
 }
-.poruka{
-    height:15vh;
-    
 
+.poruka{
+    width: 25vw;
+    min-width:150px ;
+    height: 150px;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
 }
+
 @media screen and (max-width: 1100px){
     .p{
         font-size: 2vh;

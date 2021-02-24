@@ -39,7 +39,7 @@ const Volontiraj=()=>(
                 <div>
                     <label className={styles.label} htmlFor="poruka">Motivacija:</label>
                     <br/>
-                    <input className={styles.poruka} name="poruka" type="text"  placeholder="Što vas motivira..?"/>
+                    <textarea className={styles.poruka} name="poruka" type="text"  placeholder="Što vas motivira..?"/>
                 </div>
                 <button className={styles.button}>Pošalji</button>
             </form>
