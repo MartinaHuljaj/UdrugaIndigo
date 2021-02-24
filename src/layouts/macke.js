@@ -26,11 +26,11 @@ const Macka =({pageContext})=>{
                         <p className={styles.heading}>Opis: {renderRichText(text)}</p>
                         
                     </div>
-                    <div className={styles.container3}>
+{/*                     <div className={styles.container3}>
                         <article className={styles.clanak}>
                             {renderRichText(text)}
                         </article>
-                    </div>
+                    </div> */}
 
                 </div>
             </section>
