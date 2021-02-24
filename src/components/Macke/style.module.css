@@ -109,15 +109,40 @@
     
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 650px){
      .imgObj{
         max-width: 200px;
         max-height: 200px;
     } 
     .buttonContainer{
-        max-width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        border-left:none;
+        margin:auto;
+        text-align: center;
+        
+    }
+ 
+    .inputBar{
+
+        margin:2% 4%;
+    }
+    .button{
+       width:fit-content;
+        min-width: 33%;
+        margin:2%;
+    }
+    .gallery{
+        margin: auto;
+    }
+
+    .post{
+        margin:auto;    
     }
 }
+
 @media screen and (max-width: 1400px){
     .inputBar{
         max-width: 83%;
