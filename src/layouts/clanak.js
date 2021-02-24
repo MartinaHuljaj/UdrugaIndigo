@@ -12,17 +12,20 @@ const BlogPost = ({ pageContext }) => {
     return (
         
         <main >
-        <Header/>   
-        <Img fluid={coverImage.fluid} className={styles.image} />
-        <div className={styles.container}>
-        <h1 className={styles.naslov}>{title}</h1>
-        
-        <article className={styles.clanak}>
-        {renderRichText(text)}
-        </article>
-
-        </div>
-        <Footer/>
+            <Header/>
+            <section className={styles.bigBox}>   
+            <Img fluid={coverImage.fluid} className={styles.image} />
+            <div className={styles.borderContainer}>
+                <div className={styles.container}>
+                    <h1 className={styles.naslov}>{title}</h1>
+                    
+                    <article className={styles.clanak}>
+                        {renderRichText(text)}
+                    </article>
+                </div>
+            </div>
+            </section>
+            <Footer/>
         </main>
 
     )
