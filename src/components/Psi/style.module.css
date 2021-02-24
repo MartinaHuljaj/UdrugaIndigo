@@ -11,7 +11,6 @@
     margin-bottom: 1%;
     padding-bottom: 1%;
     padding-top: 1%;
-    border-bottom: 1px solid black;
 }
 
 .textBottom{
@@ -22,23 +21,47 @@
     width: 30%;
     float: right;
     margin-top: 1%;
+    border-left:1px solid black;
+    padding-bottom: 10%;
 }
 
-.buttonContainer > input {
+.inputBar {
     display: block;
     margin-left: 17%;
-    margin-bottom: 6%;
+    margin-bottom: 4%;
+    margin-top: 4%;
+    box-shadow: 0px 0px 5px 0 gray;
+    border: transparent;
+    padding: 5px 10px;
+    border-radius: 30px;
+    background-color: transparent;
+    font-size: 2vh;
+    min-width: 15%;
+    min-height: 20px;
 }
 
-.buttonContainer > button {
+
+
+.button{
     display: block;
     margin-left: 17%;
-    margin-top: 2%;
+    text-align: left;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    font-size:2vh;
+    font-family:'Habibi';
+    transition-duration: 0.5s;   
+    box-shadow: 0px 0px 5px 0 gray;
+    border: transparent;
+    padding: 7px 20px;
+    border-radius: 30px;
+    background-color: transparent;
+    font-size: 15px;
+    
 }
 
 .filterText {
-    font-weight: bold;
-    font-size: x-large;
+    font-size: 2vh;
     margin-left: 17%;
     margin-bottom: 3px;
 }
@@ -52,7 +75,6 @@
 .gallery {
     width: 70%;
     float: right;
-    border-right: 1px black solid;
     margin-bottom: 20px;
     
 }

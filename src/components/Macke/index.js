@@ -52,17 +52,17 @@ export default function Macke(){
               setArray(newArray)
             }}/>
 
-            <button onClick={()=>{
+            <button className={styles.button} onClick={()=>{
             const filteredData=fullData.filter(
               node=>node.age<=filters[0]
             );setArray(filteredData)}}>Do godine dana</button>
 
-            <button onClick={()=>{
+            <button className={styles.button} onClick={()=>{
             const filteredData=fullData.filter(
             node=>node.vaxine==filters[1]
             );setArray(filteredData)}}>Cijepljeni</button>
 
-            <button className={styles.row} onClick={()=>setArray(fullData)}>Prikaži sve</button>
+            <button className={styles.button} onClick={()=>setArray(fullData)}>Prikaži sve</button>
             </div>
             <div className={styles.gallery}>
             {arrayToShow.map(node => {

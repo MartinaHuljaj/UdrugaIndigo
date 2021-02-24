@@ -22,10 +22,10 @@ const PrijavaRegistracija=()=>{
         setLoading(false)
         if (loginSuccessful) {
             myLocalStorage.setItem("loggedIn", username)
-            setError('Success')
+            setError('Uspjeh!')
             return navigate('/')
         }
-            setError('Wrong username or password')
+            setError('Ups! Unijeli ste pogrešnu lozinku ili mail, pokušajte ponovno.')
         }, 2000)
     }
 
@@ -58,7 +58,7 @@ const PrijavaRegistracija=()=>{
                         </label>
                         <input name="password" type="password" onChange={e => setPassword(e.target.value)} className={styles.input} />
                     </div>
-                    <p className={`${styles[error !== "Success" ? 'error' : 'success']} ${error ? styles.show : ''}`}>{error}</p>
+                    <p className={`${styles[error !== "Uspjeh" ? 'error' : 'success']} ${error ? styles.show : ''}`}>{error}</p>
                     <button className={styles.button} onClick={() => submit()}>
                         {loading ? 'Učitavanje...' : 'Prijava'}
                     </button>
