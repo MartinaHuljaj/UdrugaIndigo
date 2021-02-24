@@ -9,6 +9,14 @@
     margin-left: 4%;   
   }
 
+  @media (max-width:810px){
+    .logo {
+      display: flex;
+      align-self: center;
+      margin-top: 5%;
+      height: 130px;
+    }
+  }
 
 
 

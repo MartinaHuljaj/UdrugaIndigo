@@ -1,10 +1,13 @@
-
+.bigBox{
+  width: 90%;
+  margin: auto;
+}
 .image{
   height:25vw;
   width:100%;
-  margin-bottom: 20px;
+  margin-bottom: 1%;
+  margin-top: 1%;
   object-position:center;
-  z-index: -1;
     
 }
 .container{
@@ -22,11 +25,11 @@
 .borderContainer{
   border-bottom: 1px solid black;
   border-top:1px solid black;
+  margin-bottom: 1%;
 }
+
 .naslov{
   font-family: 'Habibi';
-  margin-left:10%;
-
 }
 .datum{
   font-family: 'Habibi';
@@ -35,7 +38,6 @@
 .clanak{
   font-family: 'Habibi';
   line-height: 25px;
-  margin:0 10%;
   max-width: 75ch;
   text-align: left;
   
