@@ -47,16 +47,16 @@ const PrijavaRegistracija=()=>{
                 <section className={styles.login}>
                     <p className={styles.p}>Prijava</p>
                     <div>
-                        <label htmlFor="username" className={styles.label}>
+                        <label htmlFor="username" className={styles.label1}>
                         E-mail:   
                         </label>
-                        <input name="username" onChange={e => setUserName(e.target.value)} className={styles.input}/>
+                        <input name="username" onChange={e => setUserName(e.target.value)} className={styles.input} placeholder="Vaša e-mail adresa ovdje..."/>
                     </div>
                     <div>
-                        <label htmlFor="password" className={styles.label}>
+                        <label htmlFor="password" className={styles.label1}>
                         Lozinka:
                         </label>
-                        <input name="password" type="password" onChange={e => setPassword(e.target.value)} className={styles.input} />
+                        <input name="password" type="password" onChange={e => setPassword(e.target.value)} className={styles.input} placeholder="Vaša lozinka ovdje..."/>
                     </div>
                     <p className={`${styles[error !== "Uspjeh" ? 'error' : 'success']} ${error ? styles.show : ''}`}>{error}</p>
                     <button className={styles.button} onClick={() => submit()}>
@@ -69,34 +69,34 @@ const PrijavaRegistracija=()=>{
                     <div>
                         <label className={styles.label}>
                             Ime:
-                            <input type="text" className={styles.input} required />
+                            <input type="text" className={styles.input} required placeholder="Vaše ime ovdje..."/>
                         </label>
                     </div>
 
                     <div>
                         <label className={styles.label}>
                             Prezime:
-                            <input type="text" className={styles.input} required />
+                            <input type="text" className={styles.input} required placeholder="Vaše prezime ovdje..."/>
                         </label>
                     </div>
 
                     <div>
                         <label className={styles.label}>
                             E-mail:
-                            <input type="email" id="mail" className={styles.input} required/>
+                            <input type="email" id="mail" className={styles.input} required placeholder="Vaša e-mail adresa ovdje..."/>
                         </label>
                     </div>
                     <div>
                         <label className={styles.label}>
                             Lozinka:
-                            <input type="password" id="lozinka" className={styles.input} required />
+                            <input type="password" id="lozinka" className={styles.input} required placeholder="Vaša lozinka ovdje..."/>
                             </label>
                     </div>
 
                     <div>
                         <label className={styles.label}>
                             Ponovi lozinku:
-                            <input type="password" className={styles.input} required />
+                            <input type="password" className={styles.input} required placeholder="Ponovite lozinku ovdje..."/>
                         </label>
                     </div>
 

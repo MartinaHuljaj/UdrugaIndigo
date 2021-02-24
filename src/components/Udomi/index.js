@@ -33,22 +33,22 @@ return(
         </section>
         <form className={styles.form}>
             <div>
-                <label className={styles.label} htmlFor="ime">Ime ljubimca</label>
+                <label className={styles.label} htmlFor="ime">Ime ljubimca:</label>
                 <br/>
-                <input  name="ime" type="text"/>
+                <input  name="ime" type="text" placeholder="Ime željenog ljubimca..."/>
             </div>
             <div>
-                <label className={styles.label} htmlFor="kontakt">Kontakt</label>
+                <label className={styles.label} htmlFor="kontakt">E-mail:</label>
                 <br/>
-                <input name="kontakt" type="text"/>
+                <input name="kontakt" type="text" placeholder="Vaša e-mail adresa ovdje..."/>
             </div>
             <div>
-                <label className={styles.label} htmlFor="drugi">Imate li drugih ljubimaca?</label>
+                <label className={styles.label} htmlFor="drugi">Drugi ljubimci?</label>
                 <br/>
-                <input name="drugi" type="text"/>
+                <input name="drugi" type="text" placeholder="Imate li drugih ljubimaca?"/>
             </div>
             <div>
-                <label className={styles.label} htmlFor="vrijeme">Kada biste mogli pokupiti ljubimca?</label>
+                <label className={styles.label} htmlFor="vrijeme">Datum upoznavanja:</label>
                 <br/>
                 <input name="vrijeme" type="date"/>
             </div>

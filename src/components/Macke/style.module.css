@@ -24,8 +24,8 @@
 
 .inputBar {
     display: block;
-    margin-left: 17%;
     margin-bottom: 4%;
+    margin-left: 17%;
     margin-top: 4%;
     box-shadow: 0px 0px 5px 0 gray;
     border: transparent;
@@ -33,7 +33,7 @@
     border-radius: 30px;
     background-color: transparent;
     font-size: 2vh;
-    min-width: 15%;
+    min-width: 5%;
     min-height: 20px;
 }
 
@@ -65,7 +65,7 @@
 .filterText {
     font-size:2vh;
     margin-left: 17%;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
     
 }
 

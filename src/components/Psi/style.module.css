@@ -18,7 +18,7 @@
 }
 
 .buttonContainer {
-    width: 30%;
+    min-width: 30%;
     float: right;
     margin-top: 1%;
     border-left:1px solid black;
@@ -36,7 +36,7 @@
     border-radius: 30px;
     background-color: transparent;
     font-size: 2vh;
-    min-width: 15%;
+    min-width: 5%;
     min-height: 20px;
 }
 
@@ -66,16 +66,10 @@
     margin-bottom: 3px;
 }
 
-.inputBar {
-    font-size: large;
-    display:inline-block;
-    padding: 5px 10px;
-}
-
 .gallery {
     width: 70%;
     float: right;
-    margin-bottom: 20px;
+/*     margin-bottom: 20px; */
     
 }
 
@@ -93,6 +87,9 @@
 .p{
     max-width: 200px;
        
+}
+.button:hover{
+    background-color: darkgrey;
 }
 
 .boxContainer::after {
