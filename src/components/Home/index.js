@@ -79,7 +79,6 @@ query {
             )
           })}
         </div>
-      {/* Dodaj novosti! */}
       
     </section>
     <section>

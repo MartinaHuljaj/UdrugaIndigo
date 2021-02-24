@@ -33,12 +33,6 @@
     margin-bottom: -3%;
 }
 
-.field {
-    display: flex;
-    flex-flow: column wrap;
-    align-items:flex-end;
-}
-
 .button{
     display: block;
     margin: 5% auto;
@@ -52,7 +46,6 @@
 
 .button:hover{
     background-color: lightgreen;
-    border: 3px solid black;
 }
 .poruka{
     height:150px; 
