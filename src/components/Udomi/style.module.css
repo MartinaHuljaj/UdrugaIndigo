@@ -1,25 +1,21 @@
 .failedLogin{
-    margin-bottom: 1%;
-    margin-top: 1%;
+
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin: 10px auto;
     box-shadow: 0px 0px 5px 0 gray;
-    padding-bottom: 3%;
-    padding-top: 3%;
-
+    padding:2% 5% 3% 5%;
     font-family: 'Habibi';
     font-size: xx-large;
-    font-weight: bold;
+    
 }
 
 .redirectContainer {
     width: 90%;
-    margin: auto;
-    margin-bottom: 1%;
-    border-bottom: 1px solid black;
+    margin: 10px;
+    padding:10px;
+    
 }
 
 .goodContainer {
@@ -48,7 +44,7 @@
 
 form input{
     width: 25vw;
-    min-width:250px ;
+    min-width:150px ;
     height: 2vw;  
     
 }
@@ -85,10 +81,7 @@ form input{
 }
 
 @media screen and (max-width: 1280px){
-    .label {
-        margin-bottom: 2%;
-        margin-top: 2%;
-    }
+
     .button {
         min-width: fit-content;
         min-height: 40px;

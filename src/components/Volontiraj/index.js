@@ -37,7 +37,7 @@ const Volontiraj=()=>(
                     <input name="kontakt" type="text"/>
                 </div>
                 <div>
-                    <label className={styles.label} htmlFor="poruka">Ukratko nam recite<br/>zašto se želite pridružiti našem timu?</label>
+                    <label className={styles.label} htmlFor="poruka">Zašto se želite pridružiti<br/> našem timu?</label>
                     <br/>
                     <input className={styles.poruka} name="poruka" type="text"/>
                 </div>
