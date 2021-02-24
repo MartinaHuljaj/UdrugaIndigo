@@ -22,12 +22,9 @@ const Pas =({pageContext})=>{
                                 <p className={styles.heading}>Ime: {title}</p>
                                 <p className={styles.heading}>Dob (mjeseci): {age}</p>
                                 <p className={styles.heading}>Cijepljen/a: {vaxine}</p>
+                                <p className={styles.heading}>Opis: {renderRichText(text)}</p>
                             </div>
-                            <div className={styles.container3}>
-                                <article className={styles.clanak}>
-                                    {renderRichText(text)}
-                                </article>
-                            </div>
+
                     </div>
                 </section>
             <Footer/>       
