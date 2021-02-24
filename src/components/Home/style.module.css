@@ -45,8 +45,8 @@ a.galerija img{
 }
 
 div.galerijaDiv:hover{
-    background-color:lightgray;
-    color: lightgray;
+    background-color:#E7E5E5;
+    color: #E7E5E5;
 }
 .text{
     font-weight: bold;
