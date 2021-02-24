@@ -58,8 +58,12 @@
     margin-top: 20px;
     margin-left: 20px; 
     margin-right: 20px; 
+    box-shadow: 0px 0px 5px 0 gray;
 }
-
+.p{
+    max-width: 200px;
+       
+}
 .boxContainer::after {
     content: "";
     clear: both;
