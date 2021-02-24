@@ -5,7 +5,17 @@ import cover from '../../images/8.png'
 import {navigate} from 'gatsby'
 import {myLocalStorage} from '../../helper'
 
-let users =JSON.parse(myLocalStorage.getItem("users"))
+let users = [
+    {
+      username: "mate@mail.com",
+      password: "123"
+    },
+    {
+      username: "jure@mail.com",
+      password: "123"
+    },
+    ]
+
 
 const PrijavaRegistracija=()=>{
     
