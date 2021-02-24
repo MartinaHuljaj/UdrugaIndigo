@@ -44,7 +44,7 @@ query {
    
     <section  className={styles.container}>
       <Slika  slika={cover}  className={styles.coverImage}/>
-      <div className={styles.clanak}>Dobro došli na stranicu udruge za zaštitu životinja Indigo!<pre className={styles.pod}>→Upoznaj nas</pre></div>
+      <div className={styles.clanak}>Dobro došli na stranicu udruge za zaštitu životinja Indigo!</div>
     <div className={styles.text}>Naši ljubimci: </div>
     <section className={styles.galerijaOkvir}>
       <div className={styles.ljubimciFrame}>

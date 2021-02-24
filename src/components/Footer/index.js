@@ -25,7 +25,7 @@ const Footer = ({activeTab,useThisStyle})=>(
           </Link>)
         )}
     </nav>
-    <nav className={styles.logocontainer} >
+    <nav >
         <a href="https://www.facebook.com/Indigo.udruga" className={styles.logo} target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faFacebook} size="3x" /></a>
 
         <a href="https://www.instagram.com/udruga.indigo/" className={styles.logo2} target="_blank" rel="noopener noreferrer" > <FontAwesomeIcon icon={faInstagram} size="3x" /></a>
