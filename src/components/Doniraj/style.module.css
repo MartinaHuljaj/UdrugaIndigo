@@ -1,26 +1,52 @@
-.section{
-    margin-bottom: 20px;
+.bigBox {
+    width: 90%;
+    margin: auto;
     border-bottom: 1px solid black;
+    margin-bottom: 1%; 
+}
+.container{
+    margin-bottom: 1%;
+    margin-top: 1%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    box-shadow: 0px 0px 5px 0 gray;
+    padding-bottom: 2%;
+    padding-top: 2%;
+
+}
+.smallContainer{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.p1 {
     font-family: 'Habibi';
-    font-size: 2vw;
-    line-height: 3vw;
-    
-}
-.p1{
-    margin:20px;
-    margin-top: 6vh;
-    width: 60%;
-    
+    font-size: larger;
 }
 
-.p2{
-    margin:20px;
-    width: 60%;
+.p2 {
+    font-family: 'Habibi';
+    font-size: larger;
+    font-weight: bold;
+}
+.p3 {
+    font-family: 'Habibi';
+    font-size: x-large;
+    font-weight: bolder;
+    text-align: center;
 }
 
-.p3{
-    margin:20px;
-    margin-bottom: 10vh;
-    width: 60%;
-    
+@media screen and (max-width: 1500px){
+    .container{
+        min-width: 388px;
+    }
+}
+
+@media screen and (max-width: 1015px){
+    .container{
+        margin:auto;
+    }
 }
