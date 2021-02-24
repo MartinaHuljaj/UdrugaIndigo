@@ -17,8 +17,10 @@
 
 .container {
     background-color: #E7E5E5;
-    margin: 1% 5%;
+    margin: 4% 5%;
+    padding:10px;
     border-radius: 8px;
+    box-shadow: 0px 0px 5px 0 gray;
 }
 .container1 {
     width: 30%;
@@ -52,6 +54,7 @@
 .clanak {
     border-radius: 8px;
     padding: 0px 5%;
+    max-width: 75ch;
 }
 
 @media screen and (max-width: 1350px){
@@ -59,6 +62,7 @@
         display: flex;
         flex-flow: column wrap;
         align-items:center;
+        
     }
     .slicica{
         margin-left: -30%;

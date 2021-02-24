@@ -17,6 +17,7 @@ export default function Psi(){
           title
           slug
           age
+          summary
           picture {
             fixed(width: 300, height:300) {
               aspectRatio
@@ -73,6 +74,7 @@ export default function Psi(){
                 <div className={styles.post}>
                 <Img fixed={node.picture.fixed} className={styles.imgObj} />
                 <h3 className={styles.textBottom}>{node.title}/mjeseci: {node.age}</h3>
+                <p className={styles.p}>{node.summary}</p>
                 </div>
                 </Link>
               )
