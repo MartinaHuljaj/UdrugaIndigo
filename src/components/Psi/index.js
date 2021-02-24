@@ -71,7 +71,7 @@ export default function Psi(){
             return (
                 <Link to={`/psi/${node.slug}`}>
                 <div className={styles.post}>
-                <Img fixed={node.picture.fixed} className={styles.picture} />
+                <Img fixed={node.picture.fixed} className={styles.imgObj} />
                 <h3 className={styles.textBottom}>{node.title}/mjeseci: {node.age}</h3>
                 </div>
                 </Link>
