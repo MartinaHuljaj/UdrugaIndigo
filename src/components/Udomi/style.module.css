@@ -1,15 +1,47 @@
+.failedLogin{
+    margin-bottom: 1%;
+    margin-top: 1%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    box-shadow: 0px 0px 5px 0 gray;
+    padding-bottom: 3%;
+    padding-top: 3%;
 
+    font-family: 'Habibi';
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.redirectContainer {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1%;
+    border-bottom: 1px solid black;
+}
+
+.goodContainer {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    flex-flow: column wrap;
+    align-items:center;
+    border-bottom: 1px solid black;
+    margin-bottom: 1%;
+}
 
 .form{
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    flex-flow: column;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
-    border-bottom: 1px solid black;
-    text-indent: 20px;
-    line-height: 3vw;
+    background-color: #E7E5E5;
+    padding-top: 2vh;
+    margin-top:auto;
+    margin-bottom: 3%;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 3px gray;
+    padding-left: 7%;
+    padding-right: 7%;
     
 }
 
@@ -17,35 +49,52 @@
 form input{
     width: 25vw;
     min-width:250px ;
-    height: 2vw;
-    
+    height: 2vw;  
     
 }
 
 .p{
     font-family: 'Habibi';
     font-size:2vw;
-    width:100%;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    margin-bottom:10px ;
-    border-bottom: 1px solid black;
-    
-    
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: 12%;
+    margin-right: 12%;
+  
+ 
 }
 .label{
+    display: flex;
+    flex-flow: column wrap;
+    align-items:flex-start;
+    font-size:2vh;
     
-    font-size:2vw;
     font-family:'Habibi';
-    line-height: 50px;
+    margin-bottom: -3%;
     
 }
 .button{
+    display: block;
+    margin: 5% auto;
     width:10vw;
-    text-align: left;
-    margin:1.5vw 0 3vw 20px;
-    font-size:2vw;
+    text-align: center;
+    font-size:2vh;
     font-family:'Habibi';
-    
+    transition-duration: 0.5s;
+    box-shadow: 0px 0px 5px 0 gray;
 }
 
+@media screen and (max-width: 1280px){
+    .label {
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }
+    .button {
+        min-width: fit-content;
+        min-height: 40px;
+    }
+
+    .form > div {
+        margin-left: 10%;
+    }
+}
