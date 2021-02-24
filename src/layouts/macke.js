@@ -13,17 +13,26 @@ const Macka =({pageContext})=>{
     return(
         <main>
             <Header activeTab="Macke"/>
-            <Image slika={cover}/>
-            <Img fixed={picture.fixed}/>
-            <h1>Ime: {title}</h1>
-            <h1>Dob (mjeseci): {age}</h1>
-            <h1>Cijepljen/a: {vaxine}</h1>
-            <article>
-                {renderRichText(text)}
-            </article>
-            <Footer/>
+                <section className={styles.bigBox}>
+                <Image slika={cover}/>
+                <div className={styles.container}>
+                    <div className={styles.container1}>
+                        <Img fixed={picture.fixed} className={styles.slicica}/>
+                    </div>
+                    <div className={styles.container2}>
+                        <p className={styles.heading}>Ime: {title}</p>
+                        <p className={styles.heading}>Dob (mjeseci): {age} </p>
+                        <p className={styles.heading}>Cijepljen/a: {vaxine}</p>
+                    </div>
+                    <div className={styles.container3}>
+                        <article className={styles.clanak}>
+                            {renderRichText(text)}
+                        </article>
+                    </div>
 
-            
+                </div>
+            </section>
+            <Footer/>
         </main>
     )
 }
