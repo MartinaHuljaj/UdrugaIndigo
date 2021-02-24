@@ -48,13 +48,13 @@ const PrijavaRegistracija=()=>{
                     <p className={styles.p}>Prijava</p>
                     <div>
                         <label htmlFor="username" className={styles.label}>
-                        Mail   
+                        E-mail:   
                         </label>
                         <input name="username" onChange={e => setUserName(e.target.value)} className={styles.input}/>
                     </div>
                     <div>
                         <label htmlFor="password" className={styles.label}>
-                        Lozinka
+                        Lozinka:
                         </label>
                         <input name="password" type="password" onChange={e => setPassword(e.target.value)} className={styles.input} />
                     </div>
@@ -66,37 +66,36 @@ const PrijavaRegistracija=()=>{
 
                 <section className={styles.register}>  
                     <p className={styles.p}>Registracija</p>
-
                     <div>
                         <label className={styles.label}>
-                            Ime
+                            Ime:
                             <input type="text" className={styles.input} required />
                         </label>
                     </div>
 
                     <div>
                         <label className={styles.label}>
-                            Prezime
+                            Prezime:
                             <input type="text" className={styles.input} required />
                         </label>
                     </div>
 
                     <div>
                         <label className={styles.label}>
-                            Mail
+                            E-mail:
                             <input type="email" id="mail" className={styles.input} required/>
                         </label>
                     </div>
                     <div>
                         <label className={styles.label}>
-                            Lozinka
+                            Lozinka:
                             <input type="password" id="lozinka" className={styles.input} required />
                             </label>
                     </div>
 
                     <div>
                         <label className={styles.label}>
-                            Ponovi lozinku
+                            Ponovi lozinku:
                             <input type="password" className={styles.input} required />
                         </label>
                     </div>
