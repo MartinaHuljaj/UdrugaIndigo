@@ -11,6 +11,7 @@
     margin-top: 2%;
   }
 .navigation div {
+    font-family: 'Habibi';
     padding:0px 15px;
     list-style: none;
     width: fit-content;
@@ -32,6 +33,7 @@
     margin-left: 7%;
   }
   .navigation div{
+    font-family: 'Habibi';
     line-height: 50px;
     font-size: 3vw;
     
