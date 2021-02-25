@@ -4,7 +4,7 @@ import styles from './style.module.css'
 
 const Logo =()=> (
     <section className={styles.logo}>
-        <a href="http://localhost:8000/" target="_self" rel="noopener noreferrer"><img src={picture} alt="Logo" className={styles.logo}/></a>
+        <a href="../" target="_self" rel="noopener noreferrer"><img src={picture} alt="Logo" className={styles.logo}/></a>
     </section>
 )
 export default Logo
