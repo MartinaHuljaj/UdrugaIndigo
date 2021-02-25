@@ -14,7 +14,7 @@ return (
           </Link>)
         )}
                 <Link to={'/prijava'}>
-            <div onClick={loggedIn() ? () => myLocalStorage.removeItem('loggedIn') : () => {}} onKeyPress={loggedIn() ? () => myLocalStorage.removeItem('loggedIn') : () => {}} 
+            <div className={'Prijava/registracija' === activeTab ? styles.active : ''} onClick={loggedIn() ? () => myLocalStorage.removeItem('loggedIn') : () => {}} onKeyPress={loggedIn() ? () => myLocalStorage.removeItem('loggedIn') : () => {}} 
             role="button" aria-hidden>
                 {loggedIn() ? 'Odjava' : 'Prijava/registracija'}
             </div>
