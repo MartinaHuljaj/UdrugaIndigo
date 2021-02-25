@@ -8,6 +8,7 @@
     font-family: 'Habibi';
     position:relative;
     flex-wrap: nowrap;
+    width: 100%;
 }
 
 .footer .address {
@@ -17,7 +18,7 @@
     text-align: center;
     border-right: 1px #999 solid;
     padding-right: 10px;
-    min-width:30%
+
 }
 
 .title {
@@ -33,7 +34,6 @@
     font-size: 14px;
     justify-content: center;
     line-height: 30px;
-    min-width:30%;
 }
 .navigation li {
     padding-left: 15px;
@@ -51,10 +51,7 @@
     color:black ;
     font-weight: bold;
   }
-  
-  .logocontainer{
-    width: 30%;
-  }
+
   .logo{
     position: absolute;
     right: 15px;
@@ -70,7 +67,7 @@
   }
 
 
-@media only screen and (max-width:450px){
+@media only screen and (max-width:600px){
   .footer .address{
     display: none;
   }

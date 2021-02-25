@@ -74,7 +74,10 @@ div.galerijaDiv:hover{
 
 @media screen and (max-width: 1130px){
     .clanak{
-        margin-top: -25%;
+        margin: -27% 15% auto 15%;
+        width: 70%;
+        font-size: 1.7vh;
+        text-align: center;
     }
 }
 
