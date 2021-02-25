@@ -1,7 +1,6 @@
 .container {
   width: 90%;
   margin: auto;
-  font-family: 'Habibi';
   margin-bottom: 1%;
 }
 
@@ -20,14 +19,17 @@
 }
 
 .datum{
+  font-family: 'Habibi';
   font-size: 12px;
   margin-bottom: 1px;
 }
 .naslov{
+  font-family: 'Habibi';
   margin-bottom:0px;
   margin-top:2px;
 }
 .sazetak{
+  font-family: 'Habibi';
   padding-top: -10px;
   width: min-content;
   word-wrap: break-word;

@@ -47,7 +47,7 @@ export default function Psi(){
         <Image slika={cover}/>
         <div className={styles.boxContainer}>
           <div className={styles.buttonContainer}>
-          <p className={styles.filterText}>Pretražite po imenu</p>
+          <p className={styles.filterText}>Pretražite po imenu:</p>
             <input className={styles.inputBar} onChange={e=>{
               const value=e.target.value;
               const newArray=fullData.filter((node)=>node.title.includes(value));
@@ -73,7 +73,7 @@ export default function Psi(){
                 <Link to={`/psi/${node.slug}`}>
                 <div className={styles.post}>
                 <Img fixed={node.picture.fixed} className={styles.imgObj} />
-                <h3 className={styles.textBottom}>{node.title}/mjeseci: {node.age}</h3>
+                <h3 className={styles.textBottom}>{node.title} / mjeseci: {node.age}</h3>
                 <p className={styles.p}>{node.summary}</p>
                 </div>
                 </Link>

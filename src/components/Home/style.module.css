@@ -20,6 +20,7 @@
     z-index: -1;
 }
 .clanak .pod{
+    font-family: 'Habibi';
     font-size:1vw;
     color:rgb(61, 61, 61);
 
@@ -49,6 +50,7 @@ div.galerijaDiv:hover{
     color: #E7E5E5;
 }
 .text{
+    font-family: 'Habibi';
     font-weight: bold;
     font-size: x-large;
     padding-left: 2%;
@@ -58,6 +60,7 @@ div.galerijaDiv:hover{
 
 }
 .citat{
+    font-family: 'Habibi';
     font-size: x-large;
     padding-top: 40px;
     padding-bottom: 40px;
