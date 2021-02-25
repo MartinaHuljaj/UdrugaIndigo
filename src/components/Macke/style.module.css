@@ -111,7 +111,7 @@
     
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 800px){
      .imgObj{
         max-width: 200px;
         max-height: 200px;
@@ -121,7 +121,7 @@
         justify-content: center;
         align-items: center;
         flex-flow: row wrap;
-        border-left:1px solid red;
+        border-left:none;
         margin:auto;
         text-align: center;
         
