@@ -3,9 +3,9 @@
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    margin: 10px auto;
+    margin: 3% 15%;
     box-shadow: 0px 0px 5px 0 gray;
-    padding:2% 5% 3% 5%;
+    padding:5%;
     font-family: 'Habibi';
     font-size: xx-large;
     
@@ -13,12 +13,12 @@
 
 .redirectContainer {
     width: 90%;
-    margin: 10px;
-    padding:10px;
+    margin:auto;
     
 }
 
 .goodContainer {
+    font-family: 'Habibi';
     display: flex;
     width: 90%;
     margin: auto;
@@ -28,6 +28,9 @@
 }
 
 .form{
+    display: flex;
+    flex-flow: column wrap;
+    align-items:center;
     background-color: #E7E5E5;
     padding-top: 2vh;
     margin-top:auto;
@@ -41,7 +44,8 @@
 }
 
 
-form input{
+.form input{
+    font-family: 'Habibi';
     width: 25vw;
     min-width:150px ;
     height: 2vw;  
@@ -95,5 +99,10 @@ form input{
 
     .form > div {
         margin-left: 10%;
+    }
+
+    .failedLogin{
+        margin: 3% auto;
+        min-width: 388px;
     }
 }

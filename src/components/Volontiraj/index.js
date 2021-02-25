@@ -12,34 +12,34 @@ const Volontiraj=()=>(
             </section>
             <form className={styles.form}>
                 <div>
-                    <label className={styles.label} htmlFor="ime">Ime</label>
+                    <label className={styles.label} htmlFor="ime">Ime:</label>
                     <br/>
-                    <input  name="ime" type="text"/>
+                    <input  name="ime" type="text" placeholder="Vaše ime ovdje..."/>
                 </div>
                 <div>
-                    <label className={styles.label} htmlFor="prezime">Prezime</label>
+                    <label className={styles.label} htmlFor="prezime">Prezime:</label>
                     <br/>
-                    <input name="prezime" type="text"/>
+                    <input name="prezime" type="text" placeholder="Vaše prezime ovdje..."/>
                 </div>
                 <div>
-                    <label className={styles.label} htmlFor="dob">Dob</label>
+                    <label className={styles.label} htmlFor="dob">Dob:</label>
                     <br/>
-                    <input name="dob" type="age"/>
+                    <input name="dob" type="age" placeholder="Vaša dob adresa ovdje..."/>
                 </div>
                 <div>
-                    <label className={styles.label} htmlFor="grad">Grad</label>
+                    <label className={styles.label} htmlFor="grad">Grad:</label>
                     <br/>
-                    <input name="grad" type="text"/>
+                    <input name="grad" type="text" placeholder="Grad u kojem stanujete ovdje..."/>
                 </div>
                 <div>
-                    <label className={styles.label} htmlFor="kontakt">Kontakt</label>
+                    <label className={styles.label} htmlFor="kontakt">E-mail:</label>
                     <br/>
-                    <input name="kontakt" type="text"/>
+                    <input name="kontakt" type="text" placeholder="Vaša e-mail adresa ovdje..."/>
                 </div>
                 <div>
-                    <label className={styles.label} htmlFor="poruka">Zašto se želite pridružiti<br/> našem timu?</label>
+                    <label className={styles.label} htmlFor="poruka">Motivacija:</label>
                     <br/>
-                    <input className={styles.poruka} name="poruka" type="text"/>
+                    <textarea className={styles.poruka} name="poruka" type="text"  placeholder="Što vas motivira..?"/>
                 </div>
                 <button className={styles.button}>Pošalji</button>
             </form>

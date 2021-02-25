@@ -27,7 +27,7 @@ const ContactForm=()=>(
                 <div>
                     <label className={styles.label} htmlFor="poruka">Poruka:</label>
 
-                    <input className={styles.poruka} name="poruka" type="text" placeholder="Vaša poruka ovdje..."/>
+                    <textarea className={styles.poruka} name="poruka" type="text" placeholder="Vaša poruka ovdje..."/>
                 </div>
                 <button className={styles.button}>Pošalji</button>
             </form>

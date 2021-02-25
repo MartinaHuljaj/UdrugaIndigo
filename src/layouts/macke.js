@@ -16,22 +16,16 @@ const Macka =({pageContext})=>{
                 <section className={styles.bigBox}>
                 <Image slika={cover}/>
                 <div className={styles.container}>
-                    <div className={styles.container1}>
-                        <Img fixed={picture.fixed} className={styles.slicica}/>
-                    </div>
+                    <Img fixed={picture.fixed} className={styles.slicica}/>
+                    <div className={styles.container1}>                
+                        <p className={styles.heading}>Ime:</p><p className={styles.heading1}>{title}</p>
+                        <p className={styles.heading}>Dob (mjeseci):</p><p className={styles.heading1}>{age} </p>
+                        <p className={styles.heading}>Cijepljen/a:</p><p className={styles.heading1}>{vaxine}</p>
+                    </div> 
                     <div className={styles.container2}>
-                        <p className={styles.heading}>Ime: {title}</p>
-                        <p className={styles.heading}>Dob (mjeseci): {age} </p>
-                        <p className={styles.heading}>Cijepljen/a: {vaxine}</p>
-                        <p className={styles.heading}>Opis: {renderRichText(text)}</p>
-                        
+                        <p className={styles.heading}>Opis:</p>
+                        <p className={styles.bogatiTekst}>{renderRichText(text)}</p>                
                     </div>
-{/*                     <div className={styles.container3}>
-                        <article className={styles.clanak}>
-                            {renderRichText(text)}
-                        </article>
-                    </div> */}
-
                 </div>
             </section>
             <Footer/>
